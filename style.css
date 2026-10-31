@@ -396,3 +396,31 @@ h1 span,h2 span{color:var(--cyan)}
 .hobby-source:hover{color:var(--cyan)}
 @media(max-width:560px){.hobby-wall-heading{display:block}.hobby-wall-stamp{display:block;margin-bottom:8px}.hobby-grid{grid-template-columns:1fr}.hobby-cover,.hobby-card-dune .hobby-images{height:205px}.hobby-card-copy{padding:13px 14px 4px}.hobby-source{margin-inline:14px}}
 @media(prefers-reduced-motion:reduce){.hobby-card{transition:none}}
+
+
+/* Personal photo wall inside the Gallery door */
+.gallery-wall{margin:25px 0 27px}
+.gallery-wall[hidden]{display:none}
+.gallery-wall-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:8px 18px;margin:0 0 17px;padding:15px 17px;border:1px solid var(--line);border-radius:10px;background:radial-gradient(circle at 8% 0%,rgba(87,227,229,.12),transparent 42%),linear-gradient(120deg,#10263a,#0b1a2b)}
+.gallery-eyebrow{color:var(--cyan);font:500 8px var(--mono);letter-spacing:.14em}
+.gallery-wall-heading h4{margin:7px 0 0;font-size:clamp(21px,4vw,29px);letter-spacing:-.035em}
+.gallery-wall-heading h4 span{color:var(--cyan)}
+.gallery-wall-heading p{grid-column:1;grid-row:2;margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+.gallery-count{grid-column:2;grid-row:1 / span 2;align-self:center;min-width:47px;padding:7px 8px;border:1px solid rgba(87,227,229,.28);border-radius:8px;color:var(--cyan);text-align:center;font:500 16px/1 var(--mono)}
+.gallery-count small{font-size:7px;letter-spacing:.08em}
+.gallery-photo-wall{columns:3 170px;column-gap:12px;padding:14px;border:1px solid rgba(87,227,229,.2);border-radius:13px;background:linear-gradient(145deg,#142a3b,#0a1725 72%);box-shadow:inset 0 0 0 5px rgba(5,13,23,.36),0 20px 45px rgba(0,0,0,.22)}
+.gallery-tile{position:relative;display:block;width:100%;margin:0 0 12px;overflow:hidden;break-inside:avoid;border:1px solid rgba(191,214,231,.21);border-radius:8px;background:#07111f;box-shadow:0 8px 20px rgba(0,0,0,.23);transition:transform .25s,border-color .25s,box-shadow .25s}
+.gallery-tile:hover,.gallery-tile:focus-visible{transform:translateY(-3px);border-color:rgba(87,227,229,.7);box-shadow:0 13px 28px rgba(0,0,0,.34),0 0 22px rgba(87,227,229,.1)}
+.gallery-tile img{display:block;width:100%;height:auto;max-height:390px;object-fit:cover;background:#091626;transition:filter .25s,transform .45s}
+.gallery-tile-feature img{max-height:310px}
+.gallery-tile-wide img{max-height:250px}
+.gallery-tile-tall img{max-height:410px}
+.gallery-tile:hover img{filter:saturate(1.06);transform:scale(1.025)}
+.gallery-caption{position:relative;display:flex;align-items:center;gap:8px;min-height:38px;padding:8px 9px;background:linear-gradient(180deg,#102339,#0b1a2b);color:#dce8f0;font-size:9px;line-height:1.35}
+.gallery-number{flex:none;color:var(--cyan);font:400 8px var(--mono);letter-spacing:.05em}
+.gallery-open{margin-left:auto;color:var(--cyan);font-size:13px}
+.gallery-wall-foot{margin:11px 3px 0;color:#7890a4;text-align:right;font:400 7px var(--mono);letter-spacing:.13em}
+.gallery-wall-foot span{color:var(--cyan);padding:0 4px}
+@media(max-width:560px){.gallery-wall-heading{padding:13px}.gallery-photo-wall{columns:2 125px;column-gap:9px;padding:9px}.gallery-tile{margin-bottom:9px}.gallery-caption{gap:6px;padding:7px;font-size:8px}.gallery-wall-foot{font-size:6px}}
+@media(max-width:350px){.gallery-photo-wall{columns:1}.gallery-wall-heading h4{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.gallery-tile,.gallery-tile img{transition:none}}
