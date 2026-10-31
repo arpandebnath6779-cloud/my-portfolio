@@ -2,231 +2,317 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Freelance developer and designer building clean websites, brands, and digital experiences." />
-    <meta name="theme-color" content="#1A1818" />
-    <title>Rhea Hart | Freelance Developer & Designer</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <meta name="author" content="Arpan Debnath" />
+    <meta
+      name="description"
+      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
+    />
+    <meta
+      property="og:description"
+      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
+    />
+    <meta
+      property="twitter:description"
+      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
+    />
+    <meta property="og:title" content="Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Arpan Debnath" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems" />
+    <meta name="theme-color" content="#e8e4e0" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://comfy-fox-7b241c.netlify.app/" />
+    <title>Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Rhea Hart home">rh<span>.</span></a>
-
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Arpan Debnath home">ad<span>®</span></a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a><a href="#works">My work</a><a href="#certificates">Certificates</a><a href="#story">My story</a><a href="#contact">Contact ↗</a>
         </nav>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
-          Menu
-        </button>
-      </div>
-
-      <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="header-tools"><span class="clock" id="localClock" aria-label="Local time in India"></span><button class="menu-toggle" aria-expanded="false" aria-controls="siteMenu">Menu <span class="menu-burger"><span></span><span></span><span></span></span></button></div>
+      </header>
+      <button class="theme-cord" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme"><span class="cord-line"></span><span class="cord-handle"></span><span class="cord-glow"></span></button>
+      <nav class="site-menu" id="siteMenu" aria-label="Menu" aria-hidden="true" hidden>
+        <button class="menu-close" aria-label="Close menu">Close ×</button>
+        <p class="eyebrow">Take a look around</p>
+        <a href="#home">Home</a><a href="#works">My work</a><a href="#certificates">Certificates</a><a href="#story">My story</a><a href="#contact">Let’s talk ↗</a>
       </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="container hero-inner">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Freelance developer & designer</p>
-            <h1>Clean digital work for brands that want to feel human.</h1>
-            <p class="lead">
-              I design and build websites that look sharp, load fast, and help real people take action.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#contact">Book a project</a>
-              <a class="button secondary" href="#work">See my work</a>
+      <main id="main">
+        <section class="hero" id="home" aria-labelledby="intro-title">
+          <div class="hero-main">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> Biomedical engineering student</p>
+              <h1 id="intro-title">Hi, I’m Arpan.<br><span class="soft">I build with</span></h1>
+              <button class="skill-calendar" type="button" aria-label="Show next engineering skill">
+                <span class="calendar-rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="calendar-top">A LITTLE CURIOSITY. A LOT OF MAKING.</span>
+                <span class="calendar-word">Embedded systems</span>
+                <span class="calendar-bottom"><span>MY TOOLKIT</span><span class="calendar-number">01 / 04</span><span aria-hidden="true">↻</span></span>
+              </button>
+              <p class="hero-description">Connecting hardware, code, and human health.<br>Learning by building things that matter.</p>
+              <div class="hero-actions"><a class="button button-primary" href="#contact">Let’s build something <span class="arrow-badge" aria-hidden="true">↗</span></a><a class="button button-secondary" href="#works">Explore my work</a></div>
             </div>
-            <ul class="hero-meta" aria-label="Quick facts">
-              <li>Available for freelance work</li>
-              <li>Based in London</li>
-              <li>Working worldwide</li>
-            </ul>
-          </div>
-
-          <div class="hero-panel reveal" aria-label="Profile summary card">
-            <div class="panel-top">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Open for projects</span>
-            </div>
-
-            <div class="profile-card">
-              <div class="avatar" aria-hidden="true">RH</div>
-              <div>
-                <p class="card-label">Rhea Hart</p>
-                <h2>Developer + Designer</h2>
+            <div class="identity-scene">
+              <span class="scene-note">Curiosity, wired differently.</span>
+              <span class="scene-watermark" aria-hidden="true">arpan.</span>
+              <div class="identity-card">
+                <div class="id-top"><span>AD / ENGINEERING</span><span class="id-chip" aria-hidden="true">▦</span></div>
+                <div class="id-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="art-core">ad.</span></div>
+                <div class="id-name">Arpan Debnath<span>BIOMEDICAL · IOT · EMBEDDED</span></div>
+                <div class="id-bottom"><span>ADAMAS UNIVERSITY</span><span>EST. IN CURIOSITY ↗</span></div>
               </div>
-            </div>
-
-            <div class="mini-stats">
-              <div>
-                <strong>6+</strong>
-                <span>Years crafting digital experiences</span>
-              </div>
-              <div>
-                <strong>32</strong>
-                <span>Brand and web projects launched</span>
-              </div>
+              <button class="ability-button" type="button">My engineer card <span aria-hidden="true">↗</span></button>
+              <span class="scene-caption">HARDWARE MEETS HUMAN POSSIBILITY</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="services">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Services</p>
-            <h2>Strategy, design, and code that work together.</h2>
+          <div class="hero-bar"><span><i class="status-dot"></i> Open to internships & freelance work</span><span>Based in India · Thinking beyond borders</span><a href="#works">Scroll to explore</a></div>
+        </section>
+        <section class="work-doors" id="works" aria-labelledby="doors-title">
+          <div class="doors-heading"><p class="eyebrow">Different doors. One curious mind.</p><h2 id="doors-title">Good things happen<br>when you <em>open a door.</em></h2><p>Pick a world. See what makes me curious.</p></div>
+          <div class="door-grid">
+            <a class="door-link" href="#embedded-hardware" style="--door:#37485a"><span class="door-number">01 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Embedded</span></span></span></a>
+            <a class="door-link" href="#iot-systems" style="--door:#695361"><span class="door-number">02 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Connect</span></span></span></a>
+            <a class="door-link" href="#biomedical-devices" style="--door:#7a866d"><span class="door-number">03 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Health</span></span></span></a>
+            <a class="door-link" href="#programming" style="--door:#a36544"><span class="door-number">04 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Code</span></span></span></a>
+          </div>
+          <p class="doors-footnote">A few interests. Endless ways to connect them.</p>
+        </section>
+        <section class="content-section" id="embedded-hardware">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">Embedded &amp; hardware</p>
+            <h2>Building real devices with practical signal and system thinking.</h2>
           </div>
 
-          <div class="card-grid">
-            <article class="info-card reveal">
+          <div class="feature-grid">
+            <article class="info-card fade-up">
               <span class="card-index">01</span>
-              <h3>Brand direction</h3>
-              <p>Clear positioning, thoughtful visuals, and messaging that helps your business stand out.</p>
+              <h3>Embedded logic</h3>
+              <p>From microcontroller routines to clean firmware flows, I design dependable embedded systems for sensing, control and communication.</p>
             </article>
-
-            <article class="info-card reveal">
+            <article class="info-card fade-up delay-1">
               <span class="card-index">02</span>
-              <h3>Web design</h3>
-              <p>Responsive layouts and polished interfaces that feel premium on mobile, tablet, and desktop.</p>
+              <h3>Hardware prototyping</h3>
+              <p>I enjoy turning prototypes into useful modules with sensors, drivers, power handling, and testable circuit layouts.</p>
             </article>
-
-            <article class="info-card reveal">
+            <article class="info-card fade-up delay-2">
               <span class="card-index">03</span>
-              <h3>Front-end build</h3>
-              <p>Fast, accessible websites built cleanly with semantic HTML, modern CSS, and JavaScript.</p>
+              <h3>Signal awareness</h3>
+              <p>Biomedical and hardware projects need careful signal interpretation, so I focus on reliable data capture and practical feedback.</p>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section alt" id="work">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Selected work</p>
-            <h2>Projects built to look good and convert.</h2>
+        <section class="content-section" id="iot-systems">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">IoT systems</p>
+            <h2>Connected solutions for monitoring, automation and smarter devices.</h2>
           </div>
 
-          <div class="work-grid">
-            <article class="project-card reveal">
-              <div class="project-art art-one" aria-hidden="true"></div>
-              <div class="project-copy">
-                <p class="project-tag">Studio website</p>
-                <h3>Northlane Studio</h3>
-                <p>A warm, editorial website for a creative studio with a stronger online presence and clearer calls to action.</p>
+          <div class="split-layout">
+            <div class="stack-panel fade-up">
+              <div class="mini-tag">System design</div>
+              <ul class="check-list">
+                <li>Sensor integration and calibration</li>
+                <li>Wireless communication and data flow</li>
+                <li>Automation with logic and feedback</li>
+                <li>Practical dashboards and alerts</li>
+              </ul>
+            </div>
+            <div class="code-panel fade-up delay-1" aria-label="Example code block">
+              <div class="code-head">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <pre><code>const reading = sensor.read();
+if (reading > threshold) {
+  relay.activate();
+  logEvent("alert");
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="biomedical-devices">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">Biomedical devices</p>
+            <h2>Designing with biomedical context, measurement precision and human-centered thinking.</h2>
+          </div>
+
+          <div class="metrics-grid">
+            <article class="metric-card fade-up">
+              <span class="metric-label">Signal focus</span>
+              <strong>ECG &amp; sensor data</strong>
+              <p>Understanding how signals behave helps me build careful interfaces and monitoring tools.</p>
+            </article>
+            <article class="metric-card fade-up delay-1">
+              <span class="metric-label">Device thinking</span>
+              <strong>Safe, testable systems</strong>
+              <p>Every prototype is approached with reliability, low-cost design and clear system boundaries.</p>
+            </article>
+            <article class="metric-card fade-up delay-2">
+              <span class="metric-label">Research approach</span>
+              <strong>Learn, test, refine</strong>
+              <p>I work in loops of observation, iteration and validation to improve hardware outcomes.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section" id="programming">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">Programming</p>
+            <h2>Comfort with low-level control and Python-driven experimentation.</h2>
+          </div>
+
+          <div class="programming-grid">
+            <div class="lang-card fade-up">
+              <span class="lang-name">C</span>
+              <p>Efficient programming for embedded logic, memory awareness and microcontroller workflows.</p>
+            </div>
+            <div class="lang-card fade-up delay-1">
+              <span class="lang-name">Python</span>
+              <p>Data handling, automation scripts, rapid prototyping and smarter validation workflows.</p>
+            </div>
+            <div class="lang-card fade-up delay-2">
+              <span class="lang-name">Arduino</span>
+              <p>Rapid hardware testing, control logic and sensor experiments with simple interactive builds.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="projects">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">Projects</p>
+            <h2>Selected work that connects biomedical thinking with practical engineering.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card fade-up">
+              <div class="project-visual project-one" aria-hidden="true"></div>
+              <div class="project-body">
+                <span class="project-tag">IoT · Health monitor</span>
+                <h3>Smart health monitoring node</h3>
+                <p>A lightweight system for tracking vitals and environmental conditions with a simple sensor pipeline and alert logic.</p>
               </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-art art-two" aria-hidden="true"></div>
-              <div class="project-copy">
-                <p class="project-tag">Portfolio refresh</p>
-                <h3>May & Co.</h3>
-                <p>A minimalist portfolio redesign that made the client’s work feel more premium and easier to explore.</p>
+            <article class="project-card fade-up delay-1">
+              <div class="project-visual project-two" aria-hidden="true"></div>
+              <div class="project-body">
+                <span class="project-tag">Embedded · control</span>
+                <h3>Microcontroller automation unit</h3>
+                <p>A compact control setup focused on sensor response, reliable switching and straightforward calibration.</p>
               </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-art art-three" aria-hidden="true"></div>
-              <div class="project-copy">
-                <p class="project-tag">Landing page</p>
-                <h3>Hearth & Form</h3>
-                <p>A product-focused landing page built to improve clarity, trust, and lead generation for a growing brand.</p>
+            <article class="project-card fade-up delay-2">
+              <div class="project-visual project-three" aria-hidden="true"></div>
+              <div class="project-body">
+                <span class="project-tag">Hardware · lab</span>
+                <h3>Biomedical sensing prototype</h3>
+                <p>An experimental device designed to study signal capture and early-stage biomedical system behavior.</p>
               </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section" id="process">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Process</p>
-            <h2>Simple, clear, and collaborative from start to finish.</h2>
+        <section class="content-section" id="certificates">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">Certificates</p>
+            <h2>Training and proof of continuous learning across technical domains.</h2>
           </div>
 
-          <div class="steps">
-            <article class="step reveal">
-              <span class="step-number">01</span>
-              <h3>Discover</h3>
-              <p>I learn your goals, audience, and the message you want people to remember.</p>
+          <div class="certificate-grid">
+            <article class="certificate-card fade-up">
+              <span class="certificate-year">2024</span>
+              <h3>IoT Fundamentals</h3>
+              <p>Core understanding of connected devices, sensor integration and system workflows.</p>
             </article>
-
-            <article class="step reveal">
-              <span class="step-number">02</span>
-              <h3>Design</h3>
-              <p>I shape the visual direction and page structure so the experience feels confident and easy to use.</p>
+            <article class="certificate-card fade-up delay-1">
+              <span class="certificate-year">2024</span>
+              <h3>Embedded Systems Essentials</h3>
+              <p>Practical learning around hardware control, microcontrollers and real-time operation.</p>
             </article>
-
-            <article class="step reveal">
-              <span class="step-number">03</span>
-              <h3>Build</h3>
-              <p>I turn the design into a fast, responsive website with accessible code and smooth interaction.</p>
+            <article class="certificate-card fade-up delay-2">
+              <span class="certificate-year">2023</span>
+              <h3>Python for Automation</h3>
+              <p>Hands-on automation and processing workflows using Python for efficient technical tasks.</p>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section about" id="about">
-        <div class="container about-inner">
-          <div class="about-copy reveal">
-            <p class="eyebrow">About</p>
-            <h2>I help small businesses look more polished online.</h2>
-            <p>
-              I combine visual design with front-end development so each project feels personal, useful, and easy to trust.
-            </p>
-            <p>
-              My work is built for founders, freelancers, and service businesses that want a stronger digital presence without the usual complexity.
-            </p>
+        <section class="content-section story-section" id="story">
+          <div class="section-heading fade-up">
+            <p class="section-kicker">My story</p>
+            <h2>Curiosity, hardware, and a growing interest in biomedical engineering.</h2>
           </div>
 
-          <div class="quote-box reveal" aria-label="Client quote">
-            <p>
-              “Rhea brought clarity to our brand and made our website feel instantly more premium and easier to understand.”
-            </p>
-            <span>— Studio client</span>
+          <div class="timeline fade-up">
+            <div class="timeline-item">
+              <span class="time-dot"></span>
+              <div>
+                <strong>Now</strong>
+                <p>Exploring biomedical and embedded engineering through practical builds, prototyping, and learning by doing.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="time-dot"></span>
+              <div>
+                <strong>Learning phase</strong>
+                <p>Improving my understanding of circuits, sensors, Python scripting and device-level debugging in real projects.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="time-dot"></span>
+              <div>
+                <strong>Foundation</strong>
+                <p>Building a strong technical base in C, Arduino, and hands-on engineering methods that connect theory to hardware.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <footer class="site-footer" id="contact">
-      <div class="container footer-inner">
-        <div>
-          <p class="eyebrow">Let’s work together</p>
-          <h2>Need a website that feels like your business?</h2>
-        </div>
+        <section class="content-section contact-section" id="contact">
+          <div class="contact-card fade-up">
+            <div>
+              <p class="section-kicker">Contact</p>
+              <h2>Let’s build something useful and human-centered.</h2>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:arpandebnath@gmail.com">arpandebnath@gmail.com</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/arpandebnath6779-cloud" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </section>
+      </main>
 
-        <div class="footer-links">
-          <a href="mailto:hello@rheahart.com">hello@rheahart.com</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance</a>
-        </div>
-      </div>
+      <footer class="site-footer">
+        <span>© <span id="year">2026</span> Arpan Debnath</span>
+        <span>Biomedical · IoT · Embedded</span>
+      </footer>
+    </div>
 
-      <div class="container footer-bottom">
-        <p>© <span id="year">2026</span> Rhea Hart</p>
-        <p>Designed with clarity.</p>
-      </div>
-    </footer>
-
+    <dialog class="ability-dialog" aria-labelledby="ability-title">
+      <button class="dialog-close" aria-label="Close engineer card">Close ×</button>
+      <p class="eyebrow">Meet the maker</p><h2 id="ability-title">Arpan Debnath.</h2>
+      <p class="dialog-subtitle">Biomedical engineering student · Adamas University</p>
+      <div class="ability-list"><span>C &amp; Python</span><span>Arduino</span><span>Sensor integration</span><span>Hardware prototyping</span><span>IoT systems</span><span>Biosignal exploration</span></div>
+      <p>Turning curiosity into practical systems, one prototype at a time.</p>
+      <a class="button button-primary" href="#contact">Let’s connect ↗</a>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>
