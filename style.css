@@ -348,3 +348,25 @@ h1 span,h2 span{color:var(--cyan)}
 @media(max-width:760px){.hero{padding-top:82px}.hero-visual{min-height:535px}.photo-frame{width:min(390px,79%)}.profile-photo{height:455px}.doors-section{padding-top:52px;padding-bottom:86px}}
 @media(max-width:430px){.hero-visual{min-height:445px}.photo-frame{width:min(330px,82%)}.profile-photo{height:370px}.door-grid{gap:22px 12px}.door-arch{height:clamp(235px,68vw,300px);padding:7px 7px 0}.door-inset{inset:10px 10px 0}.door-label{font-size:12px}.door-prompt{font-size:6px;letter-spacing:.03em}.door-caption{align-items:flex-start;flex-direction:column;justify-content:center;gap:4px;padding:10px 2px}}
 @media(prefers-reduced-motion:reduce){.door-arch{transition:none}}
+
+/* Certificate door and stronger door labels */
+.door-label{text-transform:uppercase;font-size:clamp(14px,1.35vw,17px);letter-spacing:.045em;line-height:1.28}
+.door-caption{align-items:flex-start;flex-direction:column;justify-content:center;gap:7px;min-height:88px;padding:13px 3px}
+.door-prompt{font-size:8px}
+.door-dialog{width:min(760px,calc(100% - 32px));max-height:min(86vh,780px);overflow:auto;padding:clamp(24px,4vw,38px)}
+.door-dialog h3{text-transform:uppercase;letter-spacing:-.025em}
+.door-dialog-intro{margin-bottom:20px}
+.certificate-list{display:grid;gap:10px;margin:22px 0 23px}
+.certificate-list[hidden]{display:none}
+.certificate-item{display:grid;grid-template-columns:38px minmax(0,1fr) auto;align-items:center;gap:15px;padding:15px 16px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(115deg,rgba(87,227,229,.07),rgba(13,27,45,.9) 42%)}
+.certificate-item:hover{border-color:rgba(87,227,229,.4)}
+.certificate-index{width:30px;height:30px;display:grid;place-items:center;border:1px solid rgba(87,227,229,.25);border-radius:50%;color:var(--cyan);font:400 9px var(--mono)}
+.certificate-kicker{display:block;margin-bottom:5px;color:var(--cyan);font:400 8px/1.5 var(--mono);letter-spacing:.08em}
+.certificate-copy h4{margin:0 0 4px;font-size:14px;line-height:1.35;letter-spacing:.015em}
+.certificate-copy p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}
+.certificate-link{display:inline-flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid rgba(87,227,229,.32);border-radius:6px;color:var(--cyan);font:500 8px var(--mono);letter-spacing:.04em;white-space:nowrap;transition:background .2s,color .2s}
+.certificate-link span{font-size:13px}
+.certificate-link:hover{background:var(--cyan);color:#06111d}
+@media(max-width:760px){.door-label{font-size:clamp(14px,2.2vw,17px)}}
+@media(max-width:560px){.certificate-item{grid-template-columns:32px minmax(0,1fr);gap:10px;padding:13px}.certificate-link{grid-column:2;justify-self:start}.certificate-kicker{font-size:7px}.certificate-copy h4{font-size:13px}.door-caption{min-height:78px}}
+@media(max-width:430px){.door-label{font-size:13px}.door-prompt{font-size:7px}}

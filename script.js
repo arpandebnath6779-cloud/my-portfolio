@@ -23,9 +23,18 @@
 
   const doorDialog = document.querySelector("#doorDialog");
   const doorTitle = document.querySelector("#doorDialogTitle");
+  const doorIntro = document.querySelector("#doorDialogIntro");
+  const certificateList = document.querySelector("#certificateList");
   document.querySelectorAll(".door-card").forEach(door => {
     door.addEventListener("click", () => {
+      const isCertificatesDoor = door.dataset.door === "Certificates";
       if (doorTitle) doorTitle.textContent = door.dataset.door || "Inside the door";
+      if (doorIntro) {
+        doorIntro.textContent = isCertificatesDoor
+          ? "A growing collection of things I’ve learned, explored and completed."
+          : "I’ll add this part when you share what you’d like to show here.";
+      }
+      if (certificateList) certificateList.hidden = !isCertificatesDoor;
       doorDialog?.showModal();
     });
   });
