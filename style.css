@@ -370,3 +370,29 @@ h1 span,h2 span{color:var(--cyan)}
 @media(max-width:760px){.door-label{font-size:clamp(14px,2.2vw,17px)}}
 @media(max-width:560px){.certificate-item{grid-template-columns:32px minmax(0,1fr);gap:10px;padding:13px}.certificate-link{grid-column:2;justify-self:start}.certificate-kicker{font-size:7px}.certificate-copy h4{font-size:13px}.door-caption{min-height:78px}}
 @media(max-width:430px){.door-label{font-size:13px}.door-prompt{font-size:7px}}
+
+
+/* Hobby wall inside the Hobbies door */
+.hobby-wall{margin:24px 0 25px}
+.hobby-wall[hidden]{display:none}
+.hobby-wall-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:17px;padding:14px 16px;border:1px solid var(--line);border-radius:9px;background:linear-gradient(115deg,rgba(87,227,229,.09),rgba(13,27,45,.88) 55%)}
+.hobby-wall-stamp{flex:none;color:var(--cyan);font:500 8px/1.5 var(--mono);letter-spacing:.11em}
+.hobby-wall-heading p{max-width:390px;margin:0;color:var(--muted);font-size:11px;line-height:1.6}
+.hobby-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.hobby-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:11px;background:linear-gradient(155deg,rgba(19,43,62,.96),rgba(8,20,34,.98));box-shadow:0 10px 30px rgba(0,0,0,.16);transition:transform .25s,border-color .25s}
+.hobby-card:hover{transform:translateY(-3px);border-color:rgba(87,227,229,.45)}
+.hobby-cover{display:block;width:100%;height:185px;object-fit:cover;background:#091626}
+.hobby-card-dune .hobby-images{display:flex;height:185px;gap:2px;background:#091626}
+.hobby-images-duo img{display:block;width:50%;height:100%;object-fit:cover;object-position:top center}
+.hobby-card-thrones .hobby-cover{object-position:center 28%}
+.hobby-card-ride .hobby-cover{object-position:center 55%}
+.hobby-card-ideas .hobby-cover{object-position:center 48%}
+.hobby-card-copy{padding:14px 15px 5px}
+.hobby-kicker{color:var(--cyan);font:400 8px/1.5 var(--mono);letter-spacing:.1em}
+.hobby-card-copy h4{margin:5px 0 6px;font-size:14px;line-height:1.3;letter-spacing:.015em}
+.hobby-card-copy p{margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+.hobby-source{display:inline-flex;align-items:center;gap:5px;margin:10px 15px 14px;color:#9db5c7;font:400 7px/1.5 var(--mono);letter-spacing:.035em}
+.hobby-source span{color:var(--cyan);font-size:11px}
+.hobby-source:hover{color:var(--cyan)}
+@media(max-width:560px){.hobby-wall-heading{display:block}.hobby-wall-stamp{display:block;margin-bottom:8px}.hobby-grid{grid-template-columns:1fr}.hobby-cover,.hobby-card-dune .hobby-images{height:205px}.hobby-card-copy{padding:13px 14px 4px}.hobby-source{margin-inline:14px}}
+@media(prefers-reduced-motion:reduce){.hobby-card{transition:none}}
