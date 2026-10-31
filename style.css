@@ -489,3 +489,11 @@ html[data-theme="light"] .id-card{background:linear-gradient(145deg,#eaf5f7,#cfe
 html[data-theme="light"] .id-card-mark,html[data-theme="light"] .id-card-school,html[data-theme="light"] .id-card-footer{color:#526f7d}
 html[data-theme="light"] .theme-rope .rope-label{text-shadow:0 1px 4px var(--bg)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+html[data-theme="light"] .site-nav{color:#27485a}
+html[data-theme="light"] .site-nav a{color:#27485a}
+html[data-theme="light"] .site-nav a:hover,html[data-theme="light"] .site-nav a.is-current{color:#087f8c}
+html[data-theme="light"] .nav-contact{border-color:rgba(18,47,65,.3)}
+html[data-theme="light"] .brand-copy{color:#173849}
+html[data-theme="light"] .brand-copy small{color:#506878}
+html[data-theme="light"] .footer-brand{color:#173849}
