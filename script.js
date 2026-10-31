@@ -25,16 +25,21 @@
   const doorTitle = document.querySelector("#doorDialogTitle");
   const doorIntro = document.querySelector("#doorDialogIntro");
   const certificateList = document.querySelector("#certificateList");
+  const hobbyWall = document.querySelector("#hobbyWall");
   document.querySelectorAll(".door-card").forEach(door => {
     door.addEventListener("click", () => {
       const isCertificatesDoor = door.dataset.door === "Certificates";
+      const isHobbiesDoor = door.dataset.door === "Hobbies & Interests";
       if (doorTitle) doorTitle.textContent = door.dataset.door || "Inside the door";
       if (doorIntro) {
         doorIntro.textContent = isCertificatesDoor
           ? "A growing collection of things I’ve learned, explored and completed."
-          : "I’ll add this part when you share what you’d like to show here.";
+          : isHobbiesDoor
+            ? "A wall of stories, rides and ideas that keep me inspired."
+            : "I’ll add this part when you share what you’d like to show here.";
       }
       if (certificateList) certificateList.hidden = !isCertificatesDoor;
+      if (hobbyWall) hobbyWall.hidden = !isHobbiesDoor;
       doorDialog?.showModal();
     });
   });
