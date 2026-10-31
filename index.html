@@ -1,318 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Arpan Debnath" />
-    <meta
-      name="description"
-      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
-    />
-    <meta
-      property="og:description"
-      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
-    />
-    <meta
-      property="twitter:description"
-      content="Biomedical Engineering student at Adamas University building IoT, embedded and hardware systems with C, Python and Arduino. Explore my projects and certificates."
-    />
-    <meta property="og:title" content="Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:site_name" content="Arpan Debnath" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems" />
-    <meta name="theme-color" content="#e8e4e0" />
-    <meta name="robots" content="index,follow,max-image-preview:large" />
-    <link rel="canonical" href="https://comfy-fox-7b241c.netlify.app/" />
-    <title>Arpan Debnath — Biomedical Engineering Student, IoT & Embedded Systems</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="author" content="Arpan Debnath" />
+  <meta name="description" content="Arpan Debnath is a Biomedical Engineering student at Adamas University exploring hardware development, embedded systems, Arduino and IoT." />
+  <meta property="og:title" content="Arpan Debnath — Biomedical Engineering" />
+  <meta property="og:description" content="Curiosity drives innovation. Exploring the intersection of biomedical engineering, embedded systems and intelligent technology." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Arpan Debnath — Biomedical Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Arpan Debnath, home">
+      <span class="brand-mark">AD<span>+</span></span>
+      <span class="brand-copy">ARPAN DEBNATH<small>BIOMEDICAL ENGINEERING</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primaryNav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="wordmark" href="#home" aria-label="Arpan Debnath home">ad<span>®</span></a>
-        <nav class="desktop-nav" aria-label="Primary navigation">
-          <a href="#home">Home</a><a href="#works">My work</a><a href="#certificates">Certificates</a><a href="#story">My story</a><a href="#contact">Contact ↗</a>
-        </nav>
-        <div class="header-tools"><span class="clock" id="localClock" aria-label="Local time in India"></span><button class="menu-toggle" aria-expanded="false" aria-controls="siteMenu">Menu <span class="menu-burger"><span></span><span></span><span></span></span></button></div>
-      </header>
-      <button class="theme-cord" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme"><span class="cord-line"></span><span class="cord-handle"></span><span class="cord-glow"></span></button>
-      <nav class="site-menu" id="siteMenu" aria-label="Menu" aria-hidden="true" hidden>
-        <button class="menu-close" aria-label="Close menu">Close ×</button>
-        <p class="eyebrow">Take a look around</p>
-        <a href="#home">Home</a><a href="#works">My work</a><a href="#certificates">Certificates</a><a href="#story">My story</a><a href="#contact">Let’s talk ↗</a>
-      </nav>
-      <main id="main">
-        <section class="hero" id="home" aria-labelledby="intro-title">
-          <div class="hero-main">
-            <div class="hero-copy">
-              <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> Biomedical engineering student</p>
-              <h1 id="intro-title">Hi, I’m Arpan.<br><span class="soft">I build with</span></h1>
-              <button class="skill-calendar" type="button" aria-label="Show next engineering skill">
-                <span class="calendar-rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-                <span class="calendar-top">A LITTLE CURIOSITY. A LOT OF MAKING.</span>
-                <span class="calendar-word">Embedded systems</span>
-                <span class="calendar-bottom"><span>MY TOOLKIT</span><span class="calendar-number">01 / 04</span><span aria-hidden="true">↻</span></span>
-              </button>
-              <p class="hero-description">Connecting hardware, code, and human health.<br>Learning by building things that matter.</p>
-              <div class="hero-actions"><a class="button button-primary" href="#contact">Let’s build something <span class="arrow-badge" aria-hidden="true">↗</span></a><a class="button button-secondary" href="#works">Explore my work</a></div>
+  <main id="main">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> BIOMEDICAL ENGINEERING · ADAMAS UNIVERSITY</p>
+        <h1 id="hero-title">Engineering ideas into <span>intelligent solutions.</span></h1>
+        <p class="hero-lead">Curiosity drives innovation. Engineering shapes the future.</p>
+        <p class="hero-description">I’m Arpan, a Biomedical Engineering student exploring the intersection of healthcare, hardware, embedded systems and intelligent technology.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="meta-icon">⌖</i> West Bengal, India</span>
+          <span><i class="meta-icon">◷</i> B.Tech · Class of 2029</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-a" aria-hidden="true"></div>
+        <div class="visual-orbit orbit-b" aria-hidden="true"></div>
+        <div class="photo-frame">
+          <div class="photo-topline"><span>ARPAN / 01</span><span>BIOMED × HARDWARE</span></div>
+          <img class="profile-photo" src="assets/arpan-engineer.jpg" alt="Arpan Debnath outdoors, wearing a black shirt and sunglasses" fetchpriority="high" />
+          <div class="photo-caption"><span class="caption-mark" aria-hidden="true">AD</span><span>Curious by nature.<br><strong>Engineer in progress.</strong></span><span class="caption-year">2029</span></div>
+        </div>
+        <div class="floating-note note-top"><span class="note-wave" aria-hidden="true">∿∿∿</span><span>HEALTH<br>×<br>TECH</span></div>
+        <div class="floating-note note-bottom"><span class="note-dot" aria-hidden="true"></span> LEARNING BY BUILDING</div>
+        <svg class="hero-wave" viewBox="0 0 260 70" fill="none" aria-hidden="true">
+          <path d="M1 36h42l12-25 20 49 19-38 16 21h27l13-17 13 17h96" stroke="currentColor" stroke-width="2" />
+          <path d="M1 51h68m28 0h45m30 0h87" stroke="currentColor" stroke-opacity=".23" />
+        </svg>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section section-about section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+        <h2 id="about-title">I like to understand <span>how things work.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="large-copy">I’m a Biomedical Engineering student at Adamas University with a strong interest in hardware development, embedded systems and the Internet of Things.</p>
+          <p>I enjoy exploring how things work, understanding the science behind technology and turning ideas into practical solutions. My curiosity keeps me learning, experimenting and looking for ways engineering can support healthcare.</p>
+          <a class="text-link" href="#education">A little more about my path <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="drive-panel reveal">
+          <div class="panel-top"><span class="eyebrow">WHAT DRIVES ME?</span><span class="panel-index">01—03</span></div>
+          <h3>Fundamentals first.<br><span>Possibilities next.</span></h3>
+          <p>“I am naturally curious about how things work. I believe understanding the fundamentals of technology is the first step toward creating something innovative.”</p>
+          <div class="drive-points">
+            <span><b>01</b> Curiosity &amp; exploration</span>
+            <span><b>02</b> Practical engineering</span>
+            <span><b>03</b> Continuous learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-row reveal">
+          <div><p class="eyebrow">02 / EDUCATION</p><h2 id="education-title">Learning, <span>step by step.</span></h2></div>
+          <p class="section-aside">A foundation in science, growing toward the engineering of healthcare technology.</p>
+        </div>
+        <div class="education-list">
+          <article class="education-item reveal">
+            <div class="education-date"><span>2025 — 2029</span><i></i></div>
+            <div class="education-card">
+              <div class="education-card-top"><span class="eyebrow">UNDERGRADUATE</span><span class="status-pill"><i></i> IN PROGRESS</span></div>
+              <h3>B.Tech in Biomedical Engineering</h3>
+              <p>Adamas University <span class="separator">·</span> 2nd year, 3rd semester</p>
+              <span class="education-foot">EXPECTED GRADUATION <b>2029</b></span>
             </div>
-            <div class="identity-scene">
-              <span class="scene-note">Curiosity, wired differently.</span>
-              <span class="scene-watermark" aria-hidden="true">arpan.</span>
-              <div class="identity-card">
-                <div class="id-top"><span>AD / ENGINEERING</span><span class="id-chip" aria-hidden="true">▦</span></div>
-                <div class="id-art"><img class="id-photo" src="assets/arpan-engineer.jpg" alt="Arpan Debnath, biomedical engineering student" /></div>
-                <div class="id-name">Arpan Debnath<span>BIOMEDICAL · IOT · EMBEDDED</span></div>
-                <div class="id-bottom"><span>ADAMAS UNIVERSITY</span><span>EST. IN CURIOSITY ↗</span></div>
-              </div>
-              <button class="ability-button" type="button">My engineer card <span aria-hidden="true">↗</span></button>
-              <span class="scene-caption">HARDWARE MEETS HUMAN POSSIBILITY</span>
+          </article>
+          <article class="education-item reveal">
+            <div class="education-date"><span>2024</span><i></i></div>
+            <div class="education-card education-card-compact">
+              <div class="education-card-top"><span class="eyebrow">CLASS XII</span><span class="education-board">CBSE BOARD</span></div>
+              <h3>Higher Secondary Education</h3>
+              <p>Satish Chandra Memorial School <span class="separator">·</span> Chakdaha, Nadia</p>
+              <span class="education-foot">PASSED <b>2024</b></span>
             </div>
-          </div>
-          <div class="hero-bar"><span><i class="status-dot"></i> Open to internships & freelance work</span><span>Based in India · Thinking beyond borders</span><a href="#works">Scroll to explore</a></div>
-        </section>
-        <section class="work-doors" id="works" aria-labelledby="doors-title">
-          <div class="doors-heading"><p class="eyebrow">Different doors. One curious mind.</p><h2 id="doors-title">Good things happen<br>when you <em>open a door.</em></h2><p>Pick a world. See what makes me curious.</p></div>
-          <div class="door-grid">
-            <a class="door-link" href="#embedded-hardware" style="--door:#37485a"><span class="door-number">01 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Embedded</span></span></span></a>
-            <a class="door-link" href="#iot-systems" style="--door:#695361"><span class="door-number">02 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Connect</span></span></span></a>
-            <a class="door-link" href="#biomedical-devices" style="--door:#7a866d"><span class="door-number">03 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Health</span></span></span></a>
-            <a class="door-link" href="#programming" style="--door:#a36544"><span class="door-number">04 /</span><span class="door-frame"><span class="door-panel"><span class="door-plaque">Code</span></span></span></a>
-          </div>
-          <p class="doors-footnote">A few interests. Endless ways to connect them.</p>
-        </section>
-        <section class="content-section" id="embedded-hardware">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">Embedded &amp; hardware</p>
-            <h2>Building real devices with practical signal and system thinking.</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="info-card fade-up">
-              <span class="card-index">01</span>
-              <h3>Embedded logic</h3>
-              <p>From microcontroller routines to clean firmware flows, I design dependable embedded systems for sensing, control and communication.</p>
-            </article>
-            <article class="info-card fade-up delay-1">
-              <span class="card-index">02</span>
-              <h3>Hardware prototyping</h3>
-              <p>I enjoy turning prototypes into useful modules with sensors, drivers, power handling, and testable circuit layouts.</p>
-            </article>
-            <article class="info-card fade-up delay-2">
-              <span class="card-index">03</span>
-              <h3>Signal awareness</h3>
-              <p>Biomedical and hardware projects need careful signal interpretation, so I focus on reliable data capture and practical feedback.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section" id="iot-systems">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">IoT systems</p>
-            <h2>Connected solutions for monitoring, automation and smarter devices.</h2>
-          </div>
-
-          <div class="split-layout">
-            <div class="stack-panel fade-up">
-              <div class="mini-tag">System design</div>
-              <ul class="check-list">
-                <li>Sensor integration and calibration</li>
-                <li>Wireless communication and data flow</li>
-                <li>Automation with logic and feedback</li>
-                <li>Practical dashboards and alerts</li>
-              </ul>
+          </article>
+          <article class="education-item reveal">
+            <div class="education-date"><span>2022</span><i></i></div>
+            <div class="education-card education-card-compact">
+              <div class="education-card-top"><span class="eyebrow">CLASS X</span><span class="education-board">CBSE BOARD</span></div>
+              <h3>Secondary Education</h3>
+              <p>Satish Chandra Memorial School <span class="separator">·</span> Chakdaha, Nadia</p>
+              <span class="education-foot">PASSED <b>2022</b></span>
             </div>
-            <div class="code-panel fade-up delay-1" aria-label="Example code block">
-              <div class="code-head">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <pre><code>const reading = sensor.read();
-if (reading > threshold) {
-  relay.activate();
-  logEvent("alert");
-}</code></pre>
-            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading section-heading-row reveal">
+        <div><p class="eyebrow">03 / TECHNICAL SKILLS</p><h2 id="skills-title">Tools I’m <span>learning with.</span></h2></div>
+        <p class="section-aside">A growing toolkit for making ideas tangible. No scores, just skills I’m developing.</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-group reveal">
+          <div class="skill-group-heading"><span class="group-number">01</span><div><p class="eyebrow">PROGRAMMING</p><h3>Code &amp; control</h3></div></div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-symbol">C</span><span>C Programming</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-item"><span class="skill-symbol">Py</span><span>Python Programming</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-item"><span class="skill-symbol">Ar</span><span>Arduino Programming</span><span class="skill-arrow">↗</span></div>
           </div>
-        </section>
-
-        <section class="content-section" id="biomedical-devices">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">Biomedical devices</p>
-            <h2>Designing with biomedical context, measurement precision and human-centered thinking.</h2>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-heading"><span class="group-number">02</span><div><p class="eyebrow">TECHNOLOGY &amp; ENGINEERING</p><h3>Build &amp; connect</h3></div></div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-symbol">Hw</span><span>Hardware Development</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-item"><span class="skill-symbol">Em</span><span>Embedded Systems</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-item"><span class="skill-symbol">IoT</span><span>Internet of Things</span><span class="skill-arrow">↗</span></div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="metrics-grid">
-            <article class="metric-card fade-up">
-              <span class="metric-label">Signal focus</span>
-              <strong>ECG &amp; sensor data</strong>
-              <p>Understanding how signals behave helps me build careful interfaces and monitoring tools.</p>
-            </article>
-            <article class="metric-card fade-up delay-1">
-              <span class="metric-label">Device thinking</span>
-              <strong>Safe, testable systems</strong>
-              <p>Every prototype is approached with reliability, low-cost design and clear system boundaries.</p>
-            </article>
-            <article class="metric-card fade-up delay-2">
-              <span class="metric-label">Research approach</span>
-              <strong>Learn, test, refine</strong>
-              <p>I work in loops of observation, iteration and validation to improve hardware outcomes.</p>
-            </article>
+    <section class="section interest-section" id="interests" aria-labelledby="interests-title">
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / AREAS I’M EXPLORING</p>
+          <h2 id="interests-title">Where curiosity <span>takes me.</span></h2>
+          <p class="section-intro">These are areas I’m learning about and developing through study, experimentation and project work.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card reveal"><span class="interest-index">01 / PROTOTYPING</span><div class="interest-icon icon-circuit" aria-hidden="true"><i></i><i></i><i></i></div><h3>Arduino-based hardware prototyping</h3><p>Building Arduino prototypes and exploring practical electronic applications.</p><span class="interest-line"></span></article>
+          <article class="interest-card reveal"><span class="interest-index">02 / EMBEDDED</span><div class="interest-icon icon-chip" aria-hidden="true"><i>μ</i></div><h3>Embedded system development</h3><p>Exploring embedded technologies and hardware-based problem solving.</p><span class="interest-line"></span></article>
+          <article class="interest-card reveal"><span class="interest-index">03 / CONNECTIVITY</span><div class="interest-icon icon-network" aria-hidden="true"><i></i><i></i><i></i></div><h3>IoT project development</h3><p>Learning about connected devices, monitoring and automation systems.</p><span class="interest-line"></span></article>
+          <article class="interest-card reveal"><span class="interest-index">04 / HEALTH TECH</span><div class="interest-icon icon-heart" aria-hidden="true">♡</div><h3>Biomedical hardware innovation</h3><p>Exploring biomedical devices and engineering applications in healthcare.</p><span class="interest-line"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading section-heading-row reveal">
+        <div><p class="eyebrow">05 / SELECTED PROJECTS</p><h2 id="projects-title">Made together, <span>learned together.</span></h2></div>
+        <p class="section-aside">Academic group projects at the intersection of software, technology and biomedical ideas.</p>
+      </div>
+      <div class="project-toolbar reveal">
+        <div class="filter-list" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All projects <span>02</span></button>
+          <button class="filter-button" type="button" data-filter="software" aria-pressed="false">Software / Technology</button>
+          <button class="filter-button" type="button" data-filter="biomedical" aria-pressed="false">Biomedical Technology</button>
+        </div>
+        <span class="project-count" id="projectStatus" aria-live="polite">Showing 2 projects</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-software reveal" data-category="software">
+          <div class="project-art art-restaurant" aria-hidden="true">
+            <span class="art-label">SYSTEM / 01</span><div class="restaurant-window"><span class="window-dots">● ● ●</span><div class="restaurant-graphic"><i></i><i></i><i></i><i></i></div><span class="window-rule"></span><span class="window-rule short"></span></div><span class="art-coordinate">22°34' N<br>88°22' E</span>
           </div>
-        </section>
-
-        <section class="content-section" id="programming">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">Programming</p>
-            <h2>Comfort with low-level control and Python-driven experimentation.</h2>
+          <div class="project-content">
+            <div class="project-meta"><span>ACADEMIC GROUP PROJECT</span><span>01</span></div>
+            <h3>Smart Restaurant Management System</h3>
+            <p>A collaborative academic project focused on developing a smart restaurant management system.</p>
+            <div class="project-tags"><span>Software</span><span>Technology</span><span>Team project</span></div>
           </div>
-
-          <div class="programming-grid">
-            <div class="lang-card fade-up">
-              <span class="lang-name">C</span>
-              <p>Efficient programming for embedded logic, memory awareness and microcontroller workflows.</p>
-            </div>
-            <div class="lang-card fade-up delay-1">
-              <span class="lang-name">Python</span>
-              <p>Data handling, automation scripts, rapid prototyping and smarter validation workflows.</p>
-            </div>
-            <div class="lang-card fade-up delay-2">
-              <span class="lang-name">Arduino</span>
-              <p>Rapid hardware testing, control logic and sensor experiments with simple interactive builds.</p>
-            </div>
+        </article>
+        <article class="project-card project-medical reveal" data-category="biomedical">
+          <div class="project-art art-medical" aria-hidden="true">
+            <span class="art-label">RECORD / 02</span><div class="medical-sheet"><span class="sheet-mark">+</span><span class="sheet-label">MEDICAL RECORD</span><span class="sheet-lines"></span><span class="sheet-lines line-short"></span><span class="sheet-lines"></span><div class="sheet-wave">∿ ∿ ∿ ∿ ∿ ∿</div></div><span class="art-coordinate">CARE<br>× DATA</span>
           </div>
-        </section>
-
-        <section class="content-section" id="projects">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">Projects</p>
-            <h2>Selected work that connects biomedical thinking with practical engineering.</h2>
+          <div class="project-content">
+            <div class="project-meta"><span>ACADEMIC GROUP PROJECT</span><span>02</span></div>
+            <h3>Smart Medical Record Book</h3>
+            <p>A collaborative academic project focused on a smart system for managing medical records.</p>
+            <div class="project-tags"><span>Biomedical technology</span><span>Team project</span></div>
           </div>
+        </article>
+      </div>
+      <p class="project-note"><span aria-hidden="true">✳</span> More project details will be added as they’re ready to share.</p>
+    </section>
 
-          <div class="project-grid">
-            <article class="project-card fade-up">
-              <div class="project-visual project-one" aria-hidden="true"></div>
-              <div class="project-body">
-                <span class="project-tag">IoT · Health monitor</span>
-                <h3>Smart health monitoring node</h3>
-                <p>A lightweight system for tracking vitals and environmental conditions with a simple sensor pipeline and alert logic.</p>
-              </div>
-            </article>
+    <section class="opportunity-section" aria-labelledby="opportunity-title">
+      <div class="section-wrap opportunity-inner reveal">
+        <div class="opportunity-orbit" aria-hidden="true"></div>
+        <div class="opportunity-copy"><p class="eyebrow">06 / OPEN TO WHAT’S NEXT</p><h2 id="opportunity-title">Ready to learn.<br><span>Open to opportunities.</span></h2><p>I’m exploring internships, collaborative engineering projects and practical learning experiences.</p></div>
+        <a class="button button-light" href="mailto:arpandebnath6779@gmail.com?subject=Let%E2%80%99s%20build%20something%20meaningful">Let’s build something meaningful <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-            <article class="project-card fade-up delay-1">
-              <div class="project-visual project-two" aria-hidden="true"></div>
-              <div class="project-body">
-                <span class="project-tag">Embedded · control</span>
-                <h3>Microcontroller automation unit</h3>
-                <p>A compact control setup focused on sensor response, reliable switching and straightforward calibration.</p>
-              </div>
-            </article>
-
-            <article class="project-card fade-up delay-2">
-              <div class="project-visual project-three" aria-hidden="true"></div>
-              <div class="project-body">
-                <span class="project-tag">Hardware · lab</span>
-                <h3>Biomedical sensing prototype</h3>
-                <p>An experimental device designed to study signal capture and early-stage biomedical system behavior.</p>
-              </div>
-            </article>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><p class="eyebrow">07 / CONTACT</p><h2 id="contact-title">Good ideas start <span>with a conversation.</span></h2><p class="section-intro">Have an opportunity, a project idea or a question? I’d be glad to hear from you.</p></div>
+        <div class="contact-grid">
+          <div class="contact-details reveal">
+            <a class="contact-method" href="mailto:arpandebnath6779@gmail.com"><span class="contact-method-icon">↗</span><span><small>EMAIL</small><strong>arpandebnath6779@gmail.com</strong></span></a>
+            <a class="contact-method" href="tel:+918918656884"><span class="contact-method-icon">⌕</span><span><small>PHONE</small><strong>+91 8918656884</strong></span></a>
+            <div class="social-block"><span class="eyebrow">FIND ME ELSEWHERE</span><div class="social-links"><a href="https://www.linkedin.com/in/arpan-debnath-193913420/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/_.x_arpan_x._/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://github.com/arpandebnath6779-cloud" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
           </div>
-        </section>
+          <form class="contact-form reveal" id="contactForm" action="mailto:arpandebnath6779@gmail.com" method="post" enctype="text/plain">
+            <div class="form-heading"><span class="eyebrow">SEND A NOTE</span><span class="form-required">ALL FIELDS REQUIRED</span></div>
+            <div class="form-row"><label>Your name<input name="name" autocomplete="name" required placeholder="e.g. Alex Morgan" /></label><label>Your email<input type="email" name="email" autocomplete="email" required placeholder="you@example.com" /></label></div>
+            <label>Subject<input name="subject" required placeholder="What would you like to talk about?" /></label>
+            <label>Message<textarea name="message" rows="4" required placeholder="Write a little about it..."></textarea></label>
+            <div class="form-submit-row"><button class="button button-primary" type="submit">Open email app <span aria-hidden="true">↗</span></button><span class="form-note" id="formStatus" aria-live="polite">Your email app will open with your message.</span></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section class="content-section" id="certificates">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">Certificates</p>
-            <h2>Training and proof of continuous learning across technical domains.</h2>
-          </div>
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner"><a class="footer-brand" href="#home">AD<span>+</span></a><span>Curiosity drives innovation. Engineering shapes the future.</span><span>© <span id="year"></span> Arpan Debnath <i>·</i> West Bengal, India</span></div>
+  </footer>
 
-          <div class="certificate-grid">
-            <article class="certificate-card fade-up">
-              <span class="certificate-year">2024</span>
-              <h3>IoT Fundamentals</h3>
-              <p>Core understanding of connected devices, sensor integration and system workflows.</p>
-            </article>
-            <article class="certificate-card fade-up delay-1">
-              <span class="certificate-year">2024</span>
-              <h3>Embedded Systems Essentials</h3>
-              <p>Practical learning around hardware control, microcontrollers and real-time operation.</p>
-            </article>
-            <article class="certificate-card fade-up delay-2">
-              <span class="certificate-year">2023</span>
-              <h3>Python for Automation</h3>
-              <p>Hands-on automation and processing workflows using Python for efficient technical tasks.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section story-section" id="story">
-          <div class="section-heading fade-up">
-            <p class="section-kicker">My story</p>
-            <h2>Curiosity, hardware, and a growing interest in biomedical engineering.</h2>
-          </div>
-
-          <div class="timeline fade-up">
-            <div class="timeline-item">
-              <span class="time-dot"></span>
-              <div>
-                <strong>Now</strong>
-                <p>Exploring biomedical and embedded engineering through practical builds, prototyping, and learning by doing.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="time-dot"></span>
-              <div>
-                <strong>Learning phase</strong>
-                <p>Improving my understanding of circuits, sensors, Python scripting and device-level debugging in real projects.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="time-dot"></span>
-              <div>
-                <strong>Foundation</strong>
-                <p>Building a strong technical base in C, Arduino, and hands-on engineering methods that connect theory to hardware.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section contact-section" id="contact">
-          <div class="contact-card fade-up">
-            <div>
-              <p class="section-kicker">Contact</p>
-              <h2>Let’s build something useful and human-centered.</h2>
-            </div>
-            <div class="contact-links">
-              <a href="mailto:arpandebnath@gmail.com">arpandebnath@gmail.com</a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="https://github.com/arpandebnath6779-cloud" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <span>© <span id="year">2026</span> Arpan Debnath</span>
-        <span>Biomedical · IoT · Embedded</span>
-      </footer>
-    </div>
-
-    <dialog class="ability-dialog" aria-labelledby="ability-title">
-      <button class="dialog-close" aria-label="Close engineer card">Close ×</button>
-      <p class="eyebrow">Meet the maker</p><h2 id="ability-title">Arpan Debnath.</h2>
-      <p class="dialog-subtitle">Biomedical engineering student · Adamas University</p>
-      <div class="ability-list"><span>C &amp; Python</span><span>Arduino</span><span>Sensor integration</span><span>Hardware prototyping</span><span>IoT systems</span><span>Biosignal exploration</span></div>
-      <p>Turning curiosity into practical systems, one prototype at a time.</p>
-      <a class="button button-primary" href="#contact">Let’s connect ↗</a>
-    </dialog>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
 </html>

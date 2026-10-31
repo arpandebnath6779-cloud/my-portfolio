@@ -1,84 +1,91 @@
-/* Enhance the static page without hiding content behind a loading screen. */
 (() => {
-  const clock = document.querySelector('#localClock');
-  function tick() {
-    if (!clock) return;
-    const now = new Date();
-    const options = { timeZone: 'Asia/Kolkata' };
-    const time = now.toLocaleTimeString('en-IN', { ...options, hour: 'numeric', minute: '2-digit' });
-    const date = now.toLocaleDateString('en-GB', { ...options, day: 'numeric', month: 'long' });
-    clock.textContent = `${time} • ${date}`;
-  }
-  tick();
-  setInterval(tick, 60000);
+  const menuButton = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("#primaryNav");
+  const navLinks = [...document.querySelectorAll(".site-nav a")];
 
-  const menu = document.querySelector('#siteMenu');
-  const toggle = document.querySelector('.menu-toggle');
-  const close = document.querySelector('.menu-close');
-  if (menu && toggle && close) {
-    function setMenu(open, restoreFocus = true) {
-      menu.hidden = !open;
-      menu.setAttribute('aria-hidden', String(!open));
-      toggle.setAttribute('aria-expanded', String(open));
-      if (open) close.focus();
-      else if (restoreFocus) toggle.focus();
-    }
-    toggle.addEventListener('click', () => setMenu(menu.hidden));
-    close.addEventListener('click', () => setMenu(false));
-    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      setMenu(false, false);
-      const target = document.querySelector(link.hash);
-      if (target) {
-        target.tabIndex = -1;
-        target.focus({ preventScroll: true });
-      }
-    }));
-    document.addEventListener('keydown', event => {
-      if (menu.hidden) return;
-      if (event.key === 'Escape') setMenu(false);
-      if (event.key === 'Tab') {
-        const items = [...menu.querySelectorAll('button, a[href]')];
-        const first = items[0], last = items[items.length - 1];
-        if (event.shiftKey && document.activeElement === first) {
-          event.preventDefault(); last.focus();
-        } else if (!event.shiftKey && document.activeElement === last) {
-          event.preventDefault(); first.focus();
-        }
-      }
-    });
+  function setMenu(open) {
+    if (!menuButton || !nav) return;
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    nav.classList.toggle("is-open", open);
   }
-  const themeSwitch = document.querySelector('.theme-cord');
-  if (themeSwitch) themeSwitch.addEventListener('click', () => {
-    const dark = document.documentElement.dataset.mode !== 'dark';
-    document.documentElement.dataset.mode = dark ? 'dark' : 'light';
-    themeSwitch.setAttribute('aria-checked', String(dark));
-    themeSwitch.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
-    document.querySelector('meta[name="theme-color"]').content = dark ? '#201d1d' : '#e8e4e0';
+
+  menuButton?.addEventListener("click", () => {
+    setMenu(menuButton.getAttribute("aria-expanded") !== "true");
   });
-  const calendar = document.querySelector('.skill-calendar');
-  if (calendar) {
-    const skills = ['Embedded systems', 'IoT & sensors', 'C & Python', 'Biomedical devices'];
-    let index = 0;
-    calendar.addEventListener('click', () => {
-      index = (index + 1) % skills.length;
-      const word = calendar.querySelector('.calendar-word');
-      word.textContent = skills[index];
-      word.classList.remove('flipping');
-      void word.offsetWidth;
-      word.classList.add('flipping');
-      calendar.querySelector('.calendar-number').textContent = `0${index + 1} / 04`;
+  navLinks.forEach(link => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") setMenu(false);
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) setMenu(false);
+  });
+
+  const filters = [...document.querySelectorAll(".filter-button")];
+  const projectCards = [...document.querySelectorAll(".project-card[data-category]")];
+  const projectStatus = document.querySelector("#projectStatus");
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+      filters.forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      let visible = 0;
+      projectCards.forEach(card => {
+        const show = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("is-hidden", !show);
+        if (show) visible++;
+      });
+      if (projectStatus) projectStatus.textContent = `Showing ${visible} project${visible === 1 ? "" : "s"}`;
+    });
+  });
+
+  const form = document.querySelector("#contactForm");
+  const formStatus = document.querySelector("#formStatus");
+  form?.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const values = new FormData(form);
+    const subject = String(values.get("subject") || "Portfolio enquiry");
+    const body = [
+      `Name: ${values.get("name")}`,
+      `Email: ${values.get("email")}`,
+      "",
+      String(values.get("message") || "")
+    ].join("\n");
+    if (formStatus) formStatus.textContent = "Opening your email app…";
+    window.location.href = `mailto:arpandebnath6779@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+  const year = document.querySelector("#year");
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".reveal").forEach((element, index) => {
+      gsap.fromTo(element,
+        { autoAlpha: 0, y: 22 },
+        {
+          autoAlpha: 1, y: 0, duration: 0.72, delay: Math.min((index % 4) * 0.06, 0.18),
+          ease: "power2.out",
+          scrollTrigger: { trigger: element, start: "top 90%", once: true }
+        }
+      );
     });
   }
-  const dialog = document.querySelector('.ability-dialog');
-  if (dialog) {
-    document.querySelector('.ability-button').addEventListener('click', () => dialog.showModal());
-    dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-    dialog.querySelector('a').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      const bounds = dialog.getBoundingClientRect();
-      if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
-    });
+
+  if ("IntersectionObserver" in window) {
+    const sections = [...document.querySelectorAll("main section[id]")];
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const active = document.querySelector(`.site-nav a[href="#${entry.target.id}"]`);
+        navLinks.forEach(link => link.classList.toggle("is-current", link === active));
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    sections.forEach(section => observer.observe(section));
   }
-  const year = document.querySelector('#year');
-  if (year) year.textContent = new Date().getFullYear();
 })();
