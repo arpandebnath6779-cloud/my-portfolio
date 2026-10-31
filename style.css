@@ -304,3 +304,47 @@ h1 span,h2 span{color:var(--cyan)}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+/* Hero and four door introduction */
+.hero{min-height:690px;padding-top:clamp(72px,9vw,116px);padding-bottom:84px}
+.hero h1{font-size:clamp(3.3rem,7vw,6.8rem);line-height:.98}
+.hero-visual{min-height:560px}
+.photo-frame{width:min(430px,83%);padding:10px;border-radius:220px 220px 18px 18px;transform:rotate(0);background:linear-gradient(155deg,#17334b,#0b1a2b 68%)}
+.photo-frame::before{inset:-9px;border-radius:230px 230px 26px 26px}
+.photo-topline{padding:12px 10px 13px}
+.profile-photo{height:490px;object-position:center 22%;border-radius:210px 210px 10px 10px;filter:saturate(.9) contrast(1.02)}
+.photo-caption{padding:13px 8px 5px}
+.note-top{right:-1%;top:14%}
+.note-bottom{left:-3%;bottom:14%}
+.scroll-cue{letter-spacing:.16em}
+.doors-section{padding-top:72px;padding-bottom:120px}
+.doors-heading{max-width:760px;margin-bottom:42px}
+.doors-heading h2{font-size:clamp(2.4rem,5vw,4.4rem);margin:13px 0}
+.doors-heading .section-intro{max-width:560px}
+.door-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,2vw,24px);align-items:end}
+.door-card{appearance:none;display:block;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer}
+.door-arch{height:clamp(255px,33vw,410px);position:relative;display:block;padding:9px 9px 0;overflow:hidden;border:1px solid rgba(87,227,229,.46);border-bottom:0;border-radius:180px 180px 0 0;background:linear-gradient(155deg,#173b50 0%,#10263a 50%,#0b1b2c 100%);box-shadow:inset 0 0 0 5px rgba(7,17,31,.7),0 16px 42px rgba(0,0,0,.22);transition:transform .35s,border-color .35s,box-shadow .35s}
+.door-inset{position:absolute;inset:13px 13px 0;border:1px solid rgba(153,190,216,.25);border-bottom:0;border-radius:165px 165px 0 0;background:linear-gradient(145deg,rgba(87,227,229,.1),transparent 45%),repeating-linear-gradient(90deg,transparent 0 22px,rgba(153,190,216,.035) 23px 24px),linear-gradient(180deg,#132e43,#0c1c2c);overflow:hidden}
+.door-inset::before,.door-inset::after{content:"";position:absolute;top:0;bottom:0;width:1px;background:rgba(153,190,216,.18)}
+.door-inset::before{left:17%}.door-inset::after{right:17%}
+.door-number{position:absolute;z-index:2;top:26px;left:50%;transform:translateX(-50%);font:400 9px var(--mono);letter-spacing:.18em;color:var(--cyan)}
+.door-grain{position:absolute;inset:20% 27% 0;border-inline:1px solid rgba(153,190,216,.12);background:linear-gradient(90deg,transparent,rgba(87,227,229,.035),transparent)}
+.door-handle{position:absolute;right:19%;top:54%;width:12px;height:12px;border-radius:50%;border:1px solid #b6e8e5;background:linear-gradient(135deg,#57e3e5,#6787a4);box-shadow:0 0 15px rgba(87,227,229,.5)}
+.door-knock{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);color:rgba(87,227,229,.56);font-size:clamp(20px,3vw,38px)}
+.door-caption{display:flex;min-height:78px;align-items:center;justify-content:space-between;gap:10px;padding:12px 3px;border-top:1px solid var(--line-strong)}
+.door-label{font-size:clamp(12px,1.35vw,16px);font-weight:600;line-height:1.25}
+.door-prompt{display:flex;align-items:center;gap:6px;white-space:nowrap;color:var(--subtle);font:400 7px var(--mono);letter-spacing:.08em}
+.door-prompt b{font-size:12px;color:var(--cyan);font-weight:400}
+.door-card:hover .door-arch,.door-card:focus-visible .door-arch{transform:translateY(-8px);border-color:var(--cyan);box-shadow:inset 0 0 0 5px rgba(7,17,31,.7),0 0 30px rgba(87,227,229,.13),0 20px 45px rgba(0,0,0,.3)}
+.door-card:hover .door-knock{color:var(--cyan)}
+.door-card:active .door-arch{transform:translateY(-2px) scale(.99)}
+.door-dialog{width:min(460px,calc(100% - 32px));padding:35px;border:1px solid var(--line-strong);border-radius:16px;background:#0c1b2c;color:var(--text);box-shadow:0 25px 90px rgba(0,0,0,.6)}
+.door-dialog::backdrop{background:rgba(2,8,15,.76);backdrop-filter:blur(5px)}
+.door-dialog h3{font-size:clamp(28px,5vw,42px);margin:14px 0 9px}
+.door-dialog>p:not(.eyebrow){color:var(--muted);font-size:14px}
+.door-dialog form{position:absolute;right:15px;top:15px}
+.dialog-close{width:34px;height:34px;border:1px solid var(--line-strong);border-radius:50%;background:transparent;color:var(--cyan);font-size:22px;cursor:pointer}
+.dialog-done{margin-top:12px}
+@media(max-width:900px){.door-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px}.door-arch{height:clamp(280px,52vw,390px)}.door-caption{min-height:70px}}
+@media(max-width:760px){.hero{padding-top:82px}.hero-visual{min-height:535px}.photo-frame{width:min(390px,79%)}.profile-photo{height:455px}.doors-section{padding-top:52px;padding-bottom:86px}}
+@media(max-width:430px){.hero-visual{min-height:445px}.photo-frame{width:min(330px,82%)}.profile-photo{height:370px}.door-grid{gap:22px 12px}.door-arch{height:clamp(235px,68vw,300px);padding:7px 7px 0}.door-inset{inset:10px 10px 0}.door-label{font-size:12px}.door-prompt{font-size:6px;letter-spacing:.03em}.door-caption{align-items:flex-start;flex-direction:column;justify-content:center;gap:4px;padding:10px 2px}}
+@media(prefers-reduced-motion:reduce){.door-arch{transition:none}}

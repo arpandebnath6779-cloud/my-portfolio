@@ -21,6 +21,19 @@
     if (window.innerWidth > 760) setMenu(false);
   });
 
+  const doorDialog = document.querySelector("#doorDialog");
+  const doorTitle = document.querySelector("#doorDialogTitle");
+  document.querySelectorAll(".door-card").forEach(door => {
+    door.addEventListener("click", () => {
+      if (doorTitle) doorTitle.textContent = door.dataset.door || "Inside the door";
+      doorDialog?.showModal();
+    });
+  });
+  document.querySelector(".dialog-done")?.addEventListener("click", () => doorDialog?.close());
+  doorDialog?.addEventListener("click", event => {
+    if (event.target === doorDialog) doorDialog.close();
+  });
+
   const filters = [...document.querySelectorAll(".filter-button")];
   const projectCards = [...document.querySelectorAll(".project-card[data-category]")];
   const projectStatus = document.querySelector("#projectStatus");
