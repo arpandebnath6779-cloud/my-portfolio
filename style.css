@@ -497,3 +497,24 @@ html[data-theme="light"] .nav-contact{border-color:rgba(18,47,65,.3)}
 html[data-theme="light"] .brand-copy{color:#173849}
 html[data-theme="light"] .brand-copy small{color:#506878}
 html[data-theme="light"] .footer-brand{color:#173849}
+
+
+/* Suspended portrait frame with a subtle 3D pendulum motion */
+.hero-visual{perspective:1200px;perspective-origin:50% 42%}
+.photo-suspension{position:relative;width:100%;display:grid;justify-items:center;padding-top:75px;transform-style:preserve-3d;transform-origin:50% -18px;animation:photo-hang-sway 7.2s ease-in-out infinite}
+.photo-frame{position:relative;margin:0 auto;transform-origin:50% 0;transform-style:preserve-3d;animation:photo-frame-depth 7.2s ease-in-out infinite;box-shadow:0 36px 55px rgba(0,0,0,.34),0 0 50px rgba(51,184,217,.14),inset 0 0 0 1px rgba(255,255,255,.1)}
+.photo-frame::before{inset:-8px;border-color:rgba(115,155,255,.3);box-shadow:0 0 20px rgba(87,227,229,.08)}
+.photo-frame::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;transform:translateZ(13px);background:linear-gradient(112deg,rgba(255,255,255,.13),transparent 24% 73%,rgba(87,227,229,.07));mix-blend-mode:screen}
+.photo-cable{position:absolute;z-index:1;top:0;height:76px;width:4px;border-radius:4px;background:linear-gradient(90deg,#1b3344,#c0e1e7 32%,#5d8895 51%,#e4f4f1 76%,#254354);box-shadow:1px 2px 4px rgba(0,0,0,.5),0 0 8px rgba(87,227,229,.18);transform-origin:50% 0}
+.photo-cable-left{left:17%}
+.photo-cable-right{right:17%}
+.photo-anchor{position:absolute;z-index:2;top:-1px;width:15px;height:12px;border:1px solid rgba(180,224,231,.68);border-radius:5px 5px 3px 3px;background:linear-gradient(135deg,#24495e,#a3e6e6 40%,#23485c);box-shadow:inset 1px 1px 2px rgba(255,255,255,.48),0 3px 6px rgba(0,0,0,.4)}
+.photo-anchor-left{left:calc(17% - 5.5px)}
+.photo-anchor-right{right:calc(17% - 5.5px)}
+@keyframes photo-hang-sway{0%,100%{transform:rotateZ(-1.1deg) translateY(0)}50%{transform:rotateZ(1.1deg) translateY(3px)}}
+@keyframes photo-frame-depth{0%,100%{transform:rotateX(1deg) rotateY(-4deg) translateZ(0)}50%{transform:rotateX(-1deg) rotateY(4deg) translateZ(13px)}}
+html[data-theme="light"] .photo-frame{box-shadow:0 36px 55px rgba(18,47,65,.24),0 0 50px rgba(51,184,217,.13),inset 0 0 0 1px rgba(255,255,255,.13)}
+@media(max-width:1000px){.photo-suspension{padding-top:69px}.photo-cable{height:70px}}
+@media(max-width:760px){.photo-suspension{padding-top:72px}.photo-cable{height:73px}}
+@media(max-width:430px){.photo-suspension{padding-top:60px}.photo-cable{height:61px}}
+@media(prefers-reduced-motion:reduce){.photo-suspension,.photo-frame{animation:none;transform:none}.photo-frame::after{transform:none}}
