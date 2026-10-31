@@ -518,3 +518,18 @@ html[data-theme="light"] .photo-frame{box-shadow:0 36px 55px rgba(18,47,65,.24),
 @media(max-width:760px){.photo-suspension{padding-top:72px}.photo-cable{height:73px}}
 @media(max-width:430px){.photo-suspension{padding-top:60px}.photo-cable{height:61px}}
 @media(prefers-reduced-motion:reduce){.photo-suspension,.photo-frame{animation:none;transform:none}.photo-frame::after{transform:none}}
+
+
+/* Make the portrait rig visibly read as a hanging frame */
+.photo-suspension{padding-top:88px}
+.photo-suspension::before{content:"";position:absolute;z-index:1;top:0;left:21%;right:21%;height:5px;border:1px solid rgba(186,236,239,.62);border-radius:5px;background:linear-gradient(180deg,#e1f7f5 0%,#508b98 42%,#16384b 100%);box-shadow:0 2px 5px rgba(0,0,0,.48),0 0 13px rgba(87,227,229,.19)}
+.photo-cable{top:4px;height:84px!important;width:6px;border:1px solid rgba(214,250,247,.7);background:linear-gradient(90deg,#162d3e 0%,#76b5bd 22%,#e7ffff 43%,#5595a1 61%,#e7ffff 78%,#183649 100%);box-shadow:0 1px 5px rgba(0,0,0,.58),0 0 11px rgba(87,227,229,.22)}
+.photo-cable-left{left:25%}
+.photo-cable-right{right:25%}
+.photo-anchor{top:-3px;width:17px;height:15px;border-color:rgba(225,255,254,.9);background:radial-gradient(circle at 32% 25%,#edffff,#58cbd1 34%,#176279 69%,#0a2738);box-shadow:inset 1px 1px 3px rgba(255,255,255,.72),0 3px 7px rgba(0,0,0,.48),0 0 8px rgba(87,227,229,.24)}
+.photo-anchor-left{left:calc(25% - 5.5px)}
+.photo-anchor-right{right:calc(25% - 5.5px)}
+@keyframes photo-hang-sway{0%,100%{transform:rotateZ(-1.8deg) translateY(0)}50%{transform:rotateZ(1.8deg) translateY(4px)}}
+@keyframes photo-frame-depth{0%,100%{transform:rotateX(2deg) rotateY(-7deg) translateZ(0)}50%{transform:rotateX(-2deg) rotateY(7deg) translateZ(18px)}}
+@media(max-width:760px){.photo-suspension{padding-top:84px}}
+@media(max-width:430px){.photo-suspension{padding-top:76px}}
