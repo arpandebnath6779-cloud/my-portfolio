@@ -1,4 +1,36 @@
 (() => {
+  const themeRope = document.querySelector("#themeRope");
+  const engineeringId = document.querySelector(".engineering-id");
+  const themeRoot = document.documentElement;
+  let savedTheme = null;
+  try { savedTheme = localStorage.getItem("portfolio-theme"); } catch (_) {}
+  if (savedTheme === "light" || savedTheme === "dark") themeRoot.dataset.theme = savedTheme;
+
+  function setTheme(theme) {
+    themeRoot.dataset.theme = theme;
+    const isLight = theme === "light";
+    themeRope?.setAttribute("aria-pressed", String(isLight));
+    themeRope?.setAttribute("aria-label", isLight ? "Pull to switch to dark mode" : "Pull to switch to light mode");
+    try { localStorage.setItem("portfolio-theme", theme); } catch (_) {}
+  }
+
+  let pullTimer;
+  themeRope?.addEventListener("click", () => {
+    const nextTheme = themeRoot.dataset.theme === "light" ? "dark" : "light";
+    setTheme(nextTheme);
+    themeRope.classList.remove("is-pulled");
+    engineeringId?.classList.remove("is-pulled");
+    requestAnimationFrame(() => {
+      themeRope.classList.add("is-pulled");
+      engineeringId?.classList.add("is-pulled");
+    });
+    window.clearTimeout(pullTimer);
+    pullTimer = window.setTimeout(() => {
+      themeRope.classList.remove("is-pulled");
+      engineeringId?.classList.remove("is-pulled");
+    }, 850);
+  });
+
   const menuButton = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#primaryNav");
   const navLinks = [...document.querySelectorAll(".site-nav a")];
