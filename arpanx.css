@@ -30,3 +30,8 @@
 .ax-followups button:hover{border-color:#57e3e580;background:#57e3e515}
 .ax-bubble ul{margin:6px 0;padding-left:20px}.ax-bubble li{margin:3px 0}
 @media(max-width:520px){.ax-category-list{max-height:82px;padding:8px 10px}.ax-question-list{max-height:115px;padding:7px 10px}.ax-followups button{white-space:normal}}
+
+.ax-window[data-open=true]{display:flex;flex-direction:column}
+.ax-header,.ax-banner,.ax-category-list,.ax-question-list,.ax-composer{flex:none}
+.ax-messages{flex:1;min-height:0}
+.ax-window[data-compact=true]{height:auto;min-height:0}
