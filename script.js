@@ -106,23 +106,6 @@
     });
   });
 
-  const form = document.querySelector("#contactForm");
-  const formStatus = document.querySelector("#formStatus");
-  form?.addEventListener("submit", event => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-    const values = new FormData(form);
-    const subject = String(values.get("subject") || "Portfolio enquiry");
-    const body = [
-      `Name: ${values.get("name")}`,
-      `Email: ${values.get("email")}`,
-      "",
-      String(values.get("message") || "")
-    ].join("\n");
-    if (formStatus) formStatus.textContent = "Opening your email app…";
-    window.location.href = `mailto:arpan6779.work@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
-
   const year = document.querySelector("#year");
   if (year) year.textContent = String(new Date().getFullYear());
 
