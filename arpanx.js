@@ -7,6 +7,7 @@ const panel=root.querySelector(".ax-window"),launch=root.querySelector(".ax-laun
 let busy=false,messages=(()=>{try{const x=JSON.parse(sessionStorage.getItem(KEY));if(Array.isArray(x)&&x.length&&x.every(m=>["user","assistant"].includes(m.role)&&typeof m.content==="string"))return x.slice(-24)}catch{}return [intro]})();
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function md(text){
+if(typeof text==="string"&&text.includes("\\n")&&!text.includes("\n"))text=text.replace(/\\n/g,"\n");
 const blocks=[];
 let s=esc(text).replace(/\x60{3}([^\n]*)\n([\s\S]*?)\x60{3}/g,(_,lang,code)=>{
 const safeLang=lang.trim().replace(/[^\w-]/g,"");
