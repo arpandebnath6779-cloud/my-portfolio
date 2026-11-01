@@ -120,7 +120,7 @@
       String(values.get("message") || "")
     ].join("\n");
     if (formStatus) formStatus.textContent = "Opening your email app…";
-    window.location.href = `mailto:arpandebnath6779@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:arpan6779.work@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 
   const year = document.querySelector("#year");
