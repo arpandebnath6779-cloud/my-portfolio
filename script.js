@@ -106,6 +106,42 @@
     });
   });
 
+  const contactForm = document.querySelector("#contactForm");
+  const contactFormStatus = document.querySelector("#contactFormStatus");
+  const contactSubmitButton = contactForm?.querySelector('button[type="submit"]');
+
+  contactForm?.addEventListener("submit", async event => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+
+    if (contactFormStatus) contactFormStatus.textContent = "Sending your message…";
+    if (contactSubmitButton) contactSubmitButton.disabled = true;
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/arpan6779.work@gmail.com", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(contactForm)
+      });
+      const result = await response.json();
+
+      if (!response.ok || result.success === false || result.success === "false") {
+        throw new Error(result.message || "The message could not be sent.");
+      }
+
+      contactForm.reset();
+      if (contactFormStatus) {
+        contactFormStatus.textContent = "Your message was submitted. If you have not activated this form yet, check your inbox and spam folder for FormSubmit’s activation email. Messages are forwarded after activation.";
+      }
+    } catch (_) {
+      if (contactFormStatus) {
+        contactFormStatus.textContent = "The message could not be submitted. Please email arpan6779.work@gmail.com directly.";
+      }
+    } finally {
+      if (contactSubmitButton) contactSubmitButton.disabled = false;
+    }
+  });
+
   const year = document.querySelector("#year");
   if (year) year.textContent = String(new Date().getFullYear());
 
