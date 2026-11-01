@@ -6,7 +6,20 @@ const root=document.getElementById("arpanx");if(!root)return;
 const panel=root.querySelector(".ax-window"),launch=root.querySelector(".ax-launcher"),list=root.querySelector(".ax-messages"),form=root.querySelector(".ax-form"),input=root.querySelector(".ax-input"),send=root.querySelector(".ax-send"),banner=root.querySelector(".ax-banner");
 let busy=false,messages=(()=>{try{const x=JSON.parse(sessionStorage.getItem(KEY));if(Array.isArray(x)&&x.length&&x.every(m=>["user","assistant"].includes(m.role)&&typeof m.content==="string"))return x.slice(-24)}catch{}return [intro]})();
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function md(text){let s=esc(text);s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g,"<br>");return s}
+function md(text){
+const blocks=[];
+let s=esc(text).replace(/\x60{3}([^\n]*)\n([\s\S]*?)\x60{3}/g,(_,lang,code)=>{
+const safeLang=lang.trim().replace(/[^\w-]/g,"");
+blocks.push('<pre><code'+(safeLang?' class="language-'+safeLang+'"':'')+'>'+code.replace(/\n$/,"")+'</code></pre>');
+return "AXCODE"+(blocks.length-1)+"TOKEN";
+});
+s=s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g,(match,label,raw)=>{
+try{const url=new URL(raw);if(["https:","mailto:"].includes(url.protocol))return '<a href="'+esc(url.href)+'"'+(url.protocol==="https:"?' target="_blank" rel="noopener noreferrer"':'')+'>'+label+'</a>'}catch{}
+return label;
+});
+s=s.replace(/\x60([^\x60]+)\x60/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g,"<br>");
+return s.replace(/AXCODE(\d+)TOKEN/g,(_,i)=>blocks[Number(i)]||"");
+}
 function save(){try{sessionStorage.setItem(KEY,JSON.stringify(messages.slice(-24)))}catch{}}
 function draw(){list.replaceChildren();messages.forEach((m,i)=>{const a=document.createElement("article");a.className="ax-message "+(m.role==="user"?"ax-message-user":"");const l=document.createElement("span");l.className="ax-message-label";l.textContent=m.role==="user"?"You":"ArpanX";const b=document.createElement("div");b.className="ax-bubble";b.innerHTML=md(m.content);a.append(l,b);if(m.role==="assistant"&&i>0){const actions=document.createElement("div");actions.className="ax-message-actions";const copy=document.createElement("button");copy.textContent="COPY";copy.onclick=async()=>{try{await navigator.clipboard.writeText(m.content);copy.textContent="COPIED";setTimeout(()=>copy.textContent="COPY",1000)}catch{}};actions.append(copy);if(i===messages.length-1){const again=document.createElement("button");again.textContent="REGENERATE";again.onclick=regenerate;actions.append(again)}a.append(actions)}list.append(a)});if(busy){const t=document.createElement("article");t.className="ax-message";t.innerHTML='<span class="ax-message-label">ArpanX</span><div class="ax-bubble ax-typing">Thinking…</div>';list.append(t)}list.scrollTop=list.scrollHeight}
 function push(m){messages.push(m);messages=messages.slice(-24);save();draw()}
