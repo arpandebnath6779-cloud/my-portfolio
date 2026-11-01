@@ -1,62 +1,112 @@
 (() => {
 "use strict";
-const API=window.ARPANX_API_URL||"/.netlify/functions/arpanx",KEY="arpanx-chat-v1";
-const intro={role:"assistant",content:"Hey! I’m **ArpanX** — Arpan’s portfolio assistant. Ask me about his projects, biomedical engineering journey, interests, or how to get in touch. What would you like to explore?"};
-const root=document.getElementById("arpanx");if(!root)return;
-const panel=root.querySelector(".ax-window"),launch=root.querySelector(".ax-launcher"),list=root.querySelector(".ax-messages"),form=root.querySelector(".ax-form"),input=root.querySelector(".ax-input"),send=root.querySelector(".ax-send"),banner=root.querySelector(".ax-banner");
-let busy=false,messages=(()=>{try{const x=JSON.parse(sessionStorage.getItem(KEY));if(Array.isArray(x)&&x.length&&x.every(m=>["user","assistant"].includes(m.role)&&typeof m.content==="string"))return x.slice(-24)}catch{}return [intro]})();
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function md(text){
-if(typeof text==="string"&&text.includes("\\n")&&!text.includes("\n"))text=text.replace(/\\n/g,"\n");
-const blocks=[];
-let s=esc(text).replace(/\x60{3}([^\n]*)\n([\s\S]*?)\x60{3}/g,(_,lang,code)=>{
-const safeLang=lang.trim().replace(/[^\w-]/g,"");
-blocks.push('<pre><code'+(safeLang?' class="language-'+safeLang+'"':'')+'>'+code.replace(/\n$/,"")+'</code></pre>');
-return "AXCODE"+(blocks.length-1)+"TOKEN";
-});
-s=s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g,(match,label,raw)=>{
-try{const url=new URL(raw);if(["https:","mailto:"].includes(url.protocol))return '<a href="'+esc(url.href)+'"'+(url.protocol==="https:"?' target="_blank" rel="noopener noreferrer"':'')+'>'+label+'</a>'}catch{}
-return label;
-});
-s=s.replace(/\x60([^\x60]+)\x60/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g,"<br>");
-return s.replace(/AXCODE(\d+)TOKEN/g,(_,i)=>blocks[Number(i)]||"");
+const DB_URL=new URL("./data/arpanx-faq.json",document.currentScript?.src||location.href);
+const STORE_KEY="arpanx-faq-chat-v1";
+const WELCOME={role:"assistant",content:"Hey! 👋 I’m ArpanX, your guide to Arpan Debnath’s portfolio.\n\nCurious about Arpan? Ask me about his background, education, technical skills, projects, interests and more!"};
+const NO_MATCH="Sorry! I don’t have that information in my knowledge base yet. Try asking something about Arpan’s education, skills, projects or interests.";
+const root=document.getElementById("arpanx");
+if(!root)return;
+const launcher=root.querySelector(".ax-launcher"),panel=root.querySelector(".ax-window");
+const messagesEl=root.querySelector(".ax-messages"),form=root.querySelector(".ax-form");
+const input=root.querySelector(".ax-input"),send=root.querySelector(".ax-send");
+const banner=root.querySelector(".ax-banner"),categoriesEl=root.querySelector(".ax-category-list");
+const questionList=root.querySelector(".ax-question-list");
+let faq=[],messages=loadMessages(),busy=false;
+function loadMessages(){try{const saved=JSON.parse(sessionStorage.getItem(STORE_KEY)||"null");if(Array.isArray(saved)&&saved.length&&saved.every(m=>["user","assistant"].includes(m.role)&&typeof m.content==="string"))return saved.slice(-30)}catch{}return[WELCOME]}
+function save(){try{sessionStorage.setItem(STORE_KEY,JSON.stringify(messages.slice(-30)))}catch{}}
+function escapeHTML(value){return String(value).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function renderMarkdown(text){
+ if(typeof text==="string"&&text.includes("\\n")&&!text.includes("\n"))text=text.replace(/\\n/g,"\n").replace(/\\r/g,"\n");
+ const blocks=[];let safe=escapeHTML(text);
+ safe=safe.replace(/\x60{3}([^\n]*)\n([\s\S]*?)\x60{3}/g,(_,lang,code)=>{const cls=lang.trim().replace(/[^\w-]/g,"");blocks.push("<pre><code"+(cls?' class="language-'+cls+'"':"")+">"+code.replace(/\n$/,"")+"</code></pre>");return"AXFAQCODE"+(blocks.length-1)+"END"});
+ safe=safe.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g,(all,label,raw)=>{try{const url=new URL(raw);if(["https:","mailto:"].includes(url.protocol))return'<a href="'+escapeHTML(url.href)+'"'+(url.protocol==="https:"?' target="_blank" rel="noopener noreferrer"':"")+">"+label+"</a>"}catch{}return label});
+ safe=safe.replace(/\x60([^\x60]+)\x60/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>");
+ const html=safe.split(/\n\n+/).map(part=>{if(/^AXFAQCODE\d+END$/.test(part))return part;const lines=part.split("\n");if(lines.length&&lines.every(line=>/^[-*] /.test(line)))return"<ul>"+lines.map(line=>"<li>"+line.slice(2)+"</li>").join("")+"</ul>";return"<p>"+lines.join("<br>")+"</p>"}).join("");
+ return html.replace(/AXFAQCODE(\d+)END/g,(_,i)=>blocks[Number(i)]||"");
 }
-function save(){try{sessionStorage.setItem(KEY,JSON.stringify(messages.slice(-24)))}catch{}}
-function draw(){list.replaceChildren();messages.forEach((m,i)=>{const a=document.createElement("article");a.className="ax-message "+(m.role==="user"?"ax-message-user":"");const l=document.createElement("span");l.className="ax-message-label";l.textContent=m.role==="user"?"You":"ArpanX";const b=document.createElement("div");b.className="ax-bubble";b.innerHTML=md(m.content);a.append(l,b);if(m.role==="assistant"&&i>0){const actions=document.createElement("div");actions.className="ax-message-actions";const copy=document.createElement("button");copy.textContent="COPY";copy.onclick=async()=>{try{await navigator.clipboard.writeText(m.content);copy.textContent="COPIED";setTimeout(()=>copy.textContent="COPY",1000)}catch{}};actions.append(copy);if(i===messages.length-1){const again=document.createElement("button");again.textContent="REGENERATE";again.onclick=regenerate;actions.append(again)}a.append(actions)}list.append(a)});if(busy){const t=document.createElement("article");t.className="ax-message";t.innerHTML='<span class="ax-message-label">ArpanX</span><div class="ax-bubble ax-typing">Thinking…</div>';list.append(t)}list.scrollTop=list.scrollHeight}
-function push(m){messages.push(m);messages=messages.slice(-24);save();draw()}
-function setBusy(v){busy=v;send.disabled=v;input.disabled=v;send.textContent=v?"…":"↗";draw()}
-const localOnly=location.hostname.endsWith("github.io")&&!window.ARPANX_API_URL;
-function localAnswer(question){
-const q=question.toLowerCase();
-if(/project|restaurant|medical record|record book/.test(q))return "Arpan’s portfolio lists two collaborative academic projects:\n\n- **Smart Restaurant Management System** — a project to develop a smart restaurant management system.\n- **Smart Medical Record Book** — a project focused on smart medical record management.\n\nThe portfolio doesn’t publish their implementation details or technology stacks.";
-if(/education|university|study|degree|course|biomedical engineering/.test(q))return "Arpan is studying **B.Tech in Biomedical Engineering at Adamas University**. His portfolio lists the class of 2029.";
-if(/skill|program|language|technology|tech stack|tools/.test(q))return "The portfolio lists **C, Python, Arduino, hardware development, embedded systems, and IoT** among Arpan’s skills. He’s also interested in biomedical engineering, electronics and instrumentation, AI and machine learning, and web development.";
-if(/interest|build|work on|focus/.test(q))return "Arpan is interested in biomedical and healthcare technology, Arduino prototyping, embedded systems, IoT, electronics and instrumentation, Python and C, AI and machine learning, and web development.";
-if(/contact|email|reach|linkedin|github|instagram|phone/.test(q))return "You can reach Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). He also shares his work on [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/). Phone details aren’t published here.";
-if(/intern|recruit|collaborat|opportunit|hire/.test(q))return "Arpan is interested in internships, collaborative engineering projects, and practical learning opportunities. You can contact him at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com).";
-if(/where|location|based/.test(q))return "Arpan is based in **West Bengal, India**.";
-if(/who|about|introduc|background|arpan/.test(q))return "Arpan Debnath is a Biomedical Engineering student at Adamas University, exploring where healthcare meets technology. His interests include hardware, embedded systems, Arduino, and IoT.";
-return null;
+function render(){
+ messagesEl.replaceChildren();
+ messages.forEach((message,index)=>{
+  const article=document.createElement("article");article.className="ax-message "+(message.role==="user"?"ax-message-user":"ax-message-assistant");
+  const label=document.createElement("span");label.className="ax-message-label";label.textContent=message.role==="user"?"You":"ArpanX";
+  const bubble=document.createElement("div");bubble.className="ax-bubble";bubble.innerHTML=renderMarkdown(message.content);article.append(label,bubble);
+  if(message.role==="assistant"&&index>0){
+   const actions=document.createElement("div");actions.className="ax-message-actions";
+   const copy=document.createElement("button");copy.type="button";copy.textContent="COPY";copy.onclick=async()=>{try{await navigator.clipboard.writeText(message.content);copy.textContent="COPIED";setTimeout(()=>copy.textContent="COPY",1000)}catch{}};
+   actions.append(copy);
+   if(index===messages.length-1){const again=document.createElement("button");again.type="button";again.textContent="REPEAT";again.onclick=()=>answerQuestion(messages.filter(m=>m.role==="user").at(-1)?.content||"");actions.append(again)}
+   article.append(actions);
+   if(Array.isArray(message.followUps)&&message.followUps.length){const follow=document.createElement("div");follow.className="ax-followups";message.followUps.slice(0,3).forEach(text=>{const b=document.createElement("button");b.type="button";b.textContent=text;b.onclick=()=>answerQuestion(text);follow.append(b)});article.append(follow)}
+  }
+  messagesEl.append(article);
+ });
+ if(busy){const typing=document.createElement("article");typing.className="ax-message";typing.innerHTML='<span class="ax-message-label">ArpanX</span><div class="ax-bubble ax-typing">Thinking…</div>';messagesEl.append(typing)}
+ messagesEl.scrollTop=messagesEl.scrollHeight;
 }
-async function assistantReply(){
-if(!localOnly){
-try{
-const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:messages.filter(m=>!m.pending).slice(-12)})});
-const d=await r.json().catch(()=>({}));
-if(r.ok&&typeof d.reply==="string"&&d.reply.trim())return d.reply.trim();
-}catch{}
+function setBusy(value){busy=value;send.disabled=value;input.disabled=value;send.textContent=value?"…":"↗";render()}
+function normalize(value){return value.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/&/g," and ").replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim()}
+const stopWords=new Set(["a","an","and","are","as","at","be","can","could","does","do","did","for","from","he","her","his","i","in","is","it","me","my","of","on","or","please","tell","that","the","their","there","they","this","to","what","when","where","which","who","why","with","would","you","your","arpan","debnath"]);
+const synonymGroups=[["university","college","institution","institute"],["study","studying","education","academic"],["skill","skills","strength","strengths","know","knows"],["project","projects","build","built"],["email","mail","contact","reach"],["career","goal","goals","ambition","ambitions","plan","plans"],["interest","interests","hobby","hobbies","enjoy"],["certificate","certificates","certification","certifications","achievement","achievements"]];
+const synonymMap=new Map();synonymGroups.forEach(group=>group.forEach(word=>synonymMap.set(word,group[0])));
+function tokens(value){return normalize(value).split(" ").filter(word=>word&&!stopWords.has(word))}
+function editDistanceOne(a,b){if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,edits=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue}if(++edits>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}if(i<a.length||j<b.length)edits++;return edits<=1}
+function closeToken(a,b){if(a===b)return true;const ca=synonymMap.get(a)||a,cb=synonymMap.get(b)||b;if(ca===cb)return true;return Math.min(a.length,b.length)>=5&&editDistanceOne(a,b)}
+function matchQuestion(query){
+ if(!faq.length)return null;
+ const nq=normalize(query);
+ if(!nq)return null;
+ const direct=faq.find(item=>[item.question,...item.variations].some(alias=>normalize(alias)===nq));
+ if(direct)return direct;
+ const qTokens=tokens(query);
+ if(!qTokens.length){if(/\b(about|who|arpan)\b/.test(nq))return faq.find(item=>item.id===1);return null}
+ let best=null,bestScore=0,second=0;
+ for(const item of faq){
+  const aliases=[item.question,...item.variations];
+  let aliasScore=0;
+  for(const alias of aliases){
+   const na=normalize(alias);
+   if(nq.includes(na)||na.includes(nq)){aliasScore=Math.max(aliasScore,0.92);continue}
+   const aTokens=tokens(alias);if(!aTokens.length)continue;
+   const hits=qTokens.filter(q=>aTokens.some(a=>closeToken(q,a))).length;
+   const coverage=hits/qTokens.length,precision=hits/aTokens.length;
+   aliasScore=Math.max(aliasScore,0.68*coverage+0.32*precision);
+  }
+  const keywordHits=qTokens.filter(q=>(item.keywords||[]).some(k=>closeToken(q,k))).length;
+  const keywordScore=keywordHits/qTokens.length;
+  const score=Math.max(aliasScore,0.76*aliasScore+0.24*keywordScore);
+  if(score>bestScore){second=bestScore;bestScore=score;best=item}else if(score>second)second=score;
+ }
+ return bestScore>=0.43?best:null;
 }
-const question=messages.filter(m=>m.role==="user").at(-1)?.content||"";
-const answer=localAnswer(question);
-const note="\n\n*Portfolio-only mode: the live AI service isn’t connected, so I’m answering from the published portfolio facts.*";
-if(answer)return answer+note;
-return "I can answer questions about Arpan’s education, interests, projects, skills, and contact details from the portfolio. Open-ended AI replies need the secure service to be connected. [See the setup guide](https://github.com/arpandebnath6779-cloud/my-portfolio/blob/main/ARPANX_SETUP.md).";
+function categoryLabel(category){return({"Personal Introduction":"About Arpan","Education":"Education","Technical Skills":"Skills","Projects":"Projects","Career and Goals":"Career Goals","Achievements and Certifications":"Achievements","Personal Interests":"Interests","Contact and Social Media":"Contact"})[category]||category}
+function renderCategories(){
+ categoriesEl.replaceChildren();
+ const categories=[...new Set(faq.map(item=>item.category))];
+ categories.forEach(category=>{const b=document.createElement("button");b.type="button";b.className="ax-category-button";b.textContent=categoryLabel(category);b.setAttribute("aria-label","Browse "+categoryLabel(category)+" questions");b.onclick=()=>showCategory(category);categoriesEl.append(b)});
 }
-async function request(){if(busy)return;const text=input.value.trim();if(!text)return;if(text.length>2500){banner.hidden=false;banner.textContent="Please keep each message under 2,500 characters.";return}banner.hidden=true;input.value="";input.style.height="auto";push({role:"user",content:text});setBusy(true);try{push({role:"assistant",content:await assistantReply()})}catch{push({role:"assistant",content:"I couldn’t prepare a reply. Please try that question again."})}finally{setBusy(false);input.focus()}}
-async function regenerate(){if(busy||messages.length<2)return;messages.pop();const i=messages.map(m=>m.role).lastIndexOf("user");if(i<0)return;messages=messages.slice(0,i+1);save();setBusy(true);try{push({role:"assistant",content:await assistantReply()})}catch{push({role:"assistant",content:"I couldn’t regenerate that reply. Please try again."})}finally{setBusy(false)}}
-function open(){panel.dataset.open="true";panel.setAttribute("aria-hidden","false");launch.hidden=true;input.focus();draw()}
-function close(){panel.dataset.open="false";panel.setAttribute("aria-hidden","true");launch.hidden=false;launch.focus()}
-launch.onclick=open;root.querySelector(".ax-close").onclick=close;root.querySelector(".ax-minimize").onclick=()=>panel.dataset.compact=panel.dataset.compact==="true"?"false":"true";root.querySelector(".ax-clear").onclick=()=>{if(!busy){messages=[intro];save();banner.hidden=true;draw()}};
-root.querySelectorAll(".ax-suggestion").forEach(b=>b.onclick=()=>{input.value=b.dataset.prompt;form.requestSubmit()});
-form.onsubmit=e=>{e.preventDefault();request()};input.oninput=()=>{input.style.height="auto";input.style.height=Math.min(input.scrollHeight,110)+"px"};input.onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();form.requestSubmit()}if(e.key==="Escape")close()};document.addEventListener("keydown",e=>{if(e.key==="Escape"&&panel.dataset.open==="true")close()});panel.setAttribute("aria-hidden","true");draw();
+function showCategory(category){
+ questionList.replaceChildren();questionList.hidden=false;
+ const back=document.createElement("button");back.type="button";back.className="ax-question-option ax-question-back";back.textContent="← Topics";back.onclick=()=>{questionList.hidden=true};questionList.append(back);
+ faq.filter(item=>item.category===category).forEach(item=>{const b=document.createElement("button");b.type="button";b.className="ax-question-option";b.textContent=item.question;b.onclick=()=>answerQuestion(item.question);questionList.append(b)});
+}
+function addMessage(message){messages.push(message);messages=messages.slice(-30);save();render()}
+function answerQuestion(text){
+ if(busy)return;
+ const question=String(text||"").trim();if(!question)return;
+ if(question.length>500){banner.hidden=false;banner.textContent="Please keep your question under 500 characters.";return}
+ banner.hidden=true;input.value="";input.style.height="auto";
+ addMessage({role:"user",content:question});setBusy(true);
+ window.setTimeout(()=>{const match=matchQuestion(question);const result=match?{role:"assistant",content:match.answer,followUps:match.followUps,category:match.category}:{role:"assistant",content:NO_MATCH,followUps:["Where does Arpan study?","What are Arpan’s technical skills?","What projects has he worked on?"]};addMessage(result);setBusy(false)},260);
+}
+function open(){panel.dataset.open="true";panel.setAttribute("aria-hidden","false");launcher.hidden=true;input.focus();render()}
+function close(){panel.dataset.open="false";panel.setAttribute("aria-hidden","true");launcher.hidden=false;launcher.focus()}
+launcher.addEventListener("click",open);root.querySelector(".ax-close").addEventListener("click",close);
+root.querySelector(".ax-minimize").addEventListener("click",()=>panel.dataset.compact=panel.dataset.compact==="true"?"false":"true");
+root.querySelector(".ax-clear").addEventListener("click",()=>{if(busy)return;messages=[WELCOME];try{sessionStorage.removeItem(STORE_KEY)}catch{}banner.hidden=true;questionList.hidden=true;render()});
+form.addEventListener("submit",event=>{event.preventDefault();answerQuestion(input.value)});
+input.addEventListener("input",()=>{input.style.height="auto";input.style.height=Math.min(input.scrollHeight,110)+"px"});
+input.addEventListener("keydown",event=>{if(event.key==="Enter"&&!event.shiftKey){event.preventDefault();form.requestSubmit()}if(event.key==="Escape")close()});
+document.addEventListener("keydown",event=>{if(event.key==="Escape"&&panel.dataset.open==="true")close()});
+panel.setAttribute("aria-hidden","true");render();
+fetch(DB_URL).then(response=>{if(!response.ok)throw new Error("FAQ database request failed");return response.json()}).then(data=>{if(!Array.isArray(data)||data.length<100)throw new Error("FAQ database is incomplete");faq=data;renderCategories();render()}).catch(()=>{banner.hidden=false;banner.textContent="ArpanX couldn’t load its question library. Please refresh the portfolio.";});
 })();

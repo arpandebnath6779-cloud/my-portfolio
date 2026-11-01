@@ -16,3 +16,17 @@
 .ax-privacy{margin:8px 2px 0;color:#758ba0;font:9px "DM Mono",monospace;text-align:center}.ax-window[data-compact=true]{height:auto;min-height:0;grid-template-rows:auto}.ax-window[data-compact=true]>*:not(.ax-header){display:none}
 @media(max-width:520px){.ax-launcher{right:16px;bottom:16px;width:58px;height:58px}.ax-window{right:8px;bottom:82px;width:calc(100vw - 16px);height:min(670px,calc(100dvh - 100px));border-radius:19px}}
 @media(prefers-reduced-motion:reduce){.ax-window[data-open=true]{animation:none}}
+.ax-window{grid-template-rows:auto auto auto auto minmax(0,1fr) auto}
+.ax-messages{min-height:0}
+.ax-category-list{display:flex;flex-wrap:wrap;gap:6px;padding:9px 12px;max-height:78px;overflow:auto;border-bottom:1px solid var(--ax-line);background:#0d1b2b}
+.ax-category-button,.ax-question-option{padding:6px 9px;border:1px solid #57e3e53d;border-radius:999px;color:#cce7ed;background:#57e3e50b;font:10px "DM Mono",monospace;cursor:pointer}
+.ax-category-button:hover,.ax-question-option:hover,.ax-question-option:focus-visible{border-color:#57e3e5aa;background:#57e3e51a;color:#f4ffff}
+.ax-question-list{display:flex;flex-wrap:wrap;align-content:flex-start;gap:6px;padding:8px 12px;max-height:115px;overflow:auto;border-bottom:1px solid var(--ax-line);background:#0b1725}
+.ax-question-list[hidden]{display:none}
+.ax-question-option{border-radius:9px;text-align:left;white-space:normal;max-width:100%}
+.ax-question-back{color:var(--ax-cyan);font-weight:700}
+.ax-followups{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.ax-followups button{padding:6px 8px;border:1px solid #57e3e534;border-radius:999px;color:#bde6e7;background:#57e3e509;font:9px "DM Mono",monospace;cursor:pointer;text-align:left}
+.ax-followups button:hover{border-color:#57e3e580;background:#57e3e515}
+.ax-bubble ul{margin:6px 0;padding-left:20px}.ax-bubble li{margin:3px 0}
+@media(max-width:520px){.ax-category-list{max-height:82px;padding:8px 10px}.ax-question-list{max-height:115px;padding:7px 10px}.ax-followups button{white-space:normal}}

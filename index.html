@@ -335,11 +335,12 @@
   <div class="arpanx" id="arpanx">
     <button class="ax-launcher" type="button" aria-label="Open ArpanX chat" aria-expanded="false" aria-controls="arpanxPanel"><span class="ax-launcher-mark">AX</span><span class="ax-launcher-dot" aria-hidden="true"></span></button>
     <section class="ax-window" id="arpanxPanel" data-open="false" data-compact="false" role="dialog" aria-label="Chat with ArpanX" aria-hidden="true">
-      <header class="ax-header"><div class="ax-avatar" aria-hidden="true">AX</div><div><h2 class="ax-title">ArpanX</h2><p class="ax-subtitle">Portfolio assistant · Biomedical engineering</p></div><div class="ax-head-actions"><button class="ax-icon-button ax-minimize" type="button" aria-label="Minimize chat">−</button><button class="ax-icon-button ax-clear" type="button" aria-label="Clear conversation">↺</button><button class="ax-icon-button ax-close" type="button" aria-label="Close chat">×</button></div></header>
+      <header class="ax-header"><div class="ax-avatar" aria-hidden="true">AX</div><div><h2 class="ax-title">ArpanX</h2><p class="ax-subtitle">Explore Arpan’s world · Portfolio FAQ assistant</p></div><div class="ax-head-actions"><button class="ax-icon-button ax-minimize" type="button" aria-label="Minimize chat">−</button><button class="ax-icon-button ax-clear" type="button" aria-label="Clear conversation">↺</button><button class="ax-icon-button ax-close" type="button" aria-label="Close chat">×</button></div></header>
       <div class="ax-banner" role="status" aria-live="polite" hidden></div>
+      <nav class="ax-category-list" aria-label="Browse FAQ categories"></nav>
+      <div class="ax-question-list" aria-label="Questions in selected category" hidden></div>
       <div class="ax-messages" aria-live="polite" aria-label="Conversation"></div>
-      <div class="ax-suggestions" aria-label="Suggested questions"><button class="ax-suggestion" type="button" data-prompt="Tell me about Arpan’s biomedical engineering journey.">His journey</button><button class="ax-suggestion" type="button" data-prompt="What projects has Arpan worked on?">Projects</button><button class="ax-suggestion" type="button" data-prompt="What is Arpan interested in building?">Interests</button><button class="ax-suggestion" type="button" data-prompt="How can I contact Arpan?">Contact</button></div>
-      <form class="ax-form ax-composer"><div class="ax-compose-box"><textarea class="ax-input" rows="1" maxlength="2500" placeholder="Ask about Arpan’s work…" aria-label="Your message"></textarea><button class="ax-send" type="submit" aria-label="Send message">↗</button></div><p class="ax-privacy">Portfolio questions only · Don’t share private or sensitive information</p></form>
+      <form class="ax-form ax-composer"><div class="ax-compose-box"><textarea class="ax-input" rows="1" maxlength="500" placeholder="Ask about Arpan’s work…" aria-label="Your question"></textarea><button class="ax-send" type="submit" aria-label="Send question">↗</button></div><p class="ax-privacy">Predefined portfolio answers · Don’t share private or sensitive information</p></form>
     </section>
   </div>
   <footer class="site-footer">
@@ -349,6 +350,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="script.js?v=rope-theme-1" defer></script>
-  <script src="arpanx.js?v=4" defer></script>
+  <script src="arpanx.js?v=5" defer></script>
 </body>
 </html>

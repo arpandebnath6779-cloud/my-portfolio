@@ -1,0 +1,2028 @@
+[
+  {
+    "id": 1,
+    "category": "Personal Introduction",
+    "question": "Who is Arpan Debnath?",
+    "variations": [
+      "Who is Arpan Debnath",
+      "Who is he Debnath?"
+    ],
+    "answer": "Arpan Debnath is a Biomedical Engineering student at Adamas University. He is exploring where healthcare meets technology, with interests in hardware, embedded systems, Arduino, and IoT.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "who",
+      "arpan",
+      "introduction",
+      "profile"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Personal Introduction",
+    "question": "Tell me about Arpan.",
+    "variations": [
+      "Tell me about he."
+    ],
+    "answer": "Arpan Debnath is a Biomedical Engineering student at Adamas University. He is exploring where healthcare meets technology, with interests in hardware, embedded systems, Arduino, and IoT.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "about",
+      "arpan",
+      "biography"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Personal Introduction",
+    "question": "What is Arpan’s full name?",
+    "variations": [
+      "Arpan’s full name",
+      "What is his full name?"
+    ],
+    "answer": "His name is Arpan Debnath.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "full",
+      "name",
+      "name"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Personal Introduction",
+    "question": "Where is Arpan from?",
+    "variations": [
+      "Where is Arpan from",
+      "Where is he from?"
+    ],
+    "answer": "Arpan is from West Bengal, India.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "from",
+      "west",
+      "bengal",
+      "location"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Personal Introduction",
+    "question": "What are Arpan’s interests?",
+    "variations": [
+      "Arpan’s interests",
+      "What are his interests?"
+    ],
+    "answer": "Arpan’s published interests include biomedical engineering, healthcare technology, Arduino prototyping, embedded systems, IoT, electronics and instrumentation, Python and C, AI and machine learning, and web development. His hobbies section also mentions project brainstorming, rides, Dune, and Game of Thrones.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "interests",
+      "hobbies",
+      "technology"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Personal Introduction",
+    "question": "What does Arpan do?",
+    "variations": [
+      "What does Arpan do",
+      "What does he do?"
+    ],
+    "answer": "Arpan is a Biomedical Engineering student at Adamas University.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "role",
+      "student",
+      "work"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Personal Introduction",
+    "question": "What makes Arpan different?",
+    "variations": [
+      "What makes Arpan different",
+      "What makes he different?"
+    ],
+    "answer": "That information isn’t listed in Arpan’s portfolio yet.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "different",
+      "unique",
+      "qualities"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Personal Introduction",
+    "question": "What are Arpan’s hobbies?",
+    "variations": [
+      "Arpan’s hobbies",
+      "What are his hobbies?"
+    ],
+    "answer": "The portfolio doesn’t list Arpan’s hobbies.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "hobbies",
+      "free",
+      "time"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Personal Introduction",
+    "question": "How would you describe Arpan?",
+    "variations": [
+      "How would you describe Arpan",
+      "How would you describe he?"
+    ],
+    "answer": "Arpan Debnath is a Biomedical Engineering student at Adamas University. He is exploring where healthcare meets technology, with interests in hardware, embedded systems, Arduino, and IoT.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "describe",
+      "personality"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Personal Introduction",
+    "question": "What are Arpan’s future ambitions?",
+    "variations": [
+      "Arpan’s future ambitions",
+      "What are his future ambitions?"
+    ],
+    "answer": "Arpan is interested in internships, collaborative engineering projects, and practical learning opportunities. Specific long-term ambitions aren’t listed.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "ambitions",
+      "future",
+      "goals"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Personal Introduction",
+    "question": "How old is Arpan?",
+    "variations": [
+      "How old is Arpan",
+      "How old is he?"
+    ],
+    "answer": "Arpan’s age isn’t listed in the portfolio.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "age",
+      "birthday"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Personal Introduction",
+    "question": "Where does Arpan live?",
+    "variations": [
+      "Where does Arpan live",
+      "Where does he live?"
+    ],
+    "answer": "The portfolio lists West Bengal, India. It doesn’t give a more specific home location.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "location",
+      "live"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Personal Introduction",
+    "question": "What is Arpan’s portfolio about?",
+    "variations": [
+      "Arpan’s portfolio about",
+      "What is his portfolio about?"
+    ],
+    "answer": "The portfolio presents Arpan’s Biomedical Engineering journey, interests, skills, projects, and ways to get in touch.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "portfolio",
+      "website"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Personal Introduction",
+    "question": "What inspires Arpan?",
+    "variations": [
+      "What inspires Arpan",
+      "What inspires he?"
+    ],
+    "answer": "The portfolio’s message is “Curiosity drives innovation. Engineering shapes the future.” Personal inspirations beyond that aren’t listed.",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "inspiration",
+      "motivation"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Personal Introduction",
+    "question": "What is Arpan’s personal motto?",
+    "variations": [
+      "Arpan’s personal motto",
+      "What is his personal motto?"
+    ],
+    "answer": "The portfolio says: “Curiosity drives innovation. Engineering shapes the future.”",
+    "followUps": [
+      "Where does Arpan study?",
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?"
+    ],
+    "keywords": [
+      "motto",
+      "quote",
+      "curiosity"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Education",
+    "question": "Where does Arpan study?",
+    "variations": [
+      "Where does Arpan study",
+      "Where does he study?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "university",
+      "college",
+      "study",
+      "adamas"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Education",
+    "question": "What is Arpan studying?",
+    "variations": [
+      "Arpan studying",
+      "What is he studying?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "degree",
+      "course",
+      "studying"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Education",
+    "question": "Which university does Arpan attend?",
+    "variations": [
+      "university does Arpan attend",
+      "Which university does he attend?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "university",
+      "attend",
+      "college"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Education",
+    "question": "What is his engineering branch?",
+    "variations": [
+      "his engineering branch"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "branch",
+      "major",
+      "biomedical"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Education",
+    "question": "Which year is Arpan currently studying in?",
+    "variations": [
+      "year is Arpan currently studying in",
+      "Which year is he currently studying in?"
+    ],
+    "answer": "The portfolio lists class of 2029, but doesn’t state his current year or semester.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "current",
+      "year",
+      "semester"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Education",
+    "question": "Why did Arpan choose Biomedical Engineering?",
+    "variations": [
+      "Why did Arpan choose Biomedical Engineering",
+      "Why did he choose Biomedical Engineering?"
+    ],
+    "answer": "That information isn’t listed in Arpan’s portfolio yet.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "why",
+      "choose",
+      "biomedical",
+      "engineering"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Education",
+    "question": "What subjects is Arpan interested in?",
+    "variations": [
+      "What subjects is Arpan interested in",
+      "What subjects is he interested in?"
+    ],
+    "answer": "His published academic and technical interests include Biomedical Engineering, healthcare technology, electronics and instrumentation, embedded systems, and IoT.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "subjects",
+      "academic",
+      "interests"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Education",
+    "question": "What is Arpan’s academic background?",
+    "variations": [
+      "Arpan’s academic background",
+      "What is his academic background?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "academic",
+      "background",
+      "education"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Education",
+    "question": "What does Biomedical Engineering involve?",
+    "variations": [
+      "What does Biomedical Engineering involve"
+    ],
+    "answer": "Biomedical Engineering combines engineering and life sciences to develop or apply technology in healthcare. Arpan is studying this field at Adamas University.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "biomedical",
+      "engineering",
+      "definition",
+      "field"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Education",
+    "question": "What are Arpan’s academic interests?",
+    "variations": [
+      "Arpan’s academic interests",
+      "What are his academic interests?"
+    ],
+    "answer": "Arpan’s portfolio points to Biomedical Engineering, healthcare technology, electronics and instrumentation, embedded systems, and IoT.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "academic",
+      "interests"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Education",
+    "question": "What degree is Arpan pursuing?",
+    "variations": [
+      "What degree is Arpan pursuing",
+      "What degree is he pursuing?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "degree",
+      "btech",
+      "bachelor"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Education",
+    "question": "Which college is Arpan in?",
+    "variations": [
+      "college is Arpan in",
+      "Which college is he in?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "college",
+      "university",
+      "adamas"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Education",
+    "question": "When will Arpan graduate?",
+    "variations": [
+      "When will Arpan graduate",
+      "When will he graduate?"
+    ],
+    "answer": "The portfolio lists class of 2029; it doesn’t provide a specific graduation date.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "graduate",
+      "graduation",
+      "date"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Education",
+    "question": "What is Arpan’s major?",
+    "variations": [
+      "Arpan’s major",
+      "What is his major?"
+    ],
+    "answer": "Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University. His portfolio lists the class of 2029.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "major",
+      "branch",
+      "subject"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Education",
+    "question": "Is Arpan a Biomedical Engineering student?",
+    "variations": [
+      "Arpan a Biomedical Engineering student",
+      "Is he a Biomedical Engineering student?"
+    ],
+    "answer": "Yes. Arpan is pursuing a B.Tech in Biomedical Engineering at Adamas University.",
+    "followUps": [
+      "What does Biomedical Engineering involve?",
+      "What technical skills does Arpan have?",
+      "Tell me about his projects."
+    ],
+    "keywords": [
+      "student",
+      "biomedical"
+    ]
+  },
+  {
+    "id": 31,
+    "category": "Technical Skills",
+    "question": "Which programming languages does Arpan know?",
+    "variations": [
+      "programming languages does Arpan know",
+      "Which programming languages does he know?"
+    ],
+    "answer": "The portfolio lists C, Python, Arduino, hardware development, embedded systems, and IoT as Arpan’s skills.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "programming",
+      "languages",
+      "c",
+      "python"
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Technical Skills",
+    "question": "Does Arpan know Python?",
+    "variations": [
+      "Arpan know Python",
+      "Does he know Python?"
+    ],
+    "answer": "Python is listed among Arpan’s skills.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "python",
+      "programming"
+    ]
+  },
+  {
+    "id": 33,
+    "category": "Technical Skills",
+    "question": "Does Arpan know C programming?",
+    "variations": [
+      "Arpan know C programming",
+      "Does he know C programming?"
+    ],
+    "answer": "C is listed among Arpan’s skills.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "c",
+      "programming",
+      "language"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Technical Skills",
+    "question": "Does Arpan know web development?",
+    "variations": [
+      "Arpan know web development",
+      "Does he know web development?"
+    ],
+    "answer": "Web development is listed as an interest. The portfolio doesn’t claim it as a verified skill.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "web",
+      "development",
+      "skill"
+    ]
+  },
+  {
+    "id": 35,
+    "category": "Technical Skills",
+    "question": "Is Arpan interested in AI?",
+    "variations": [
+      "Arpan interested in AI",
+      "Is he interested in AI?"
+    ],
+    "answer": "Yes. Artificial intelligence is listed among Arpan’s interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "ai",
+      "artificial",
+      "intelligence",
+      "interest"
+    ]
+  },
+  {
+    "id": 36,
+    "category": "Technical Skills",
+    "question": "Does Arpan know machine learning?",
+    "variations": [
+      "Arpan know machine learning",
+      "Does he know machine learning?"
+    ],
+    "answer": "Machine learning is listed as an interest, but the portfolio doesn’t claim it as a verified skill.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "machine",
+      "learning",
+      "know"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "Technical Skills",
+    "question": "What are Arpan’s technical strengths?",
+    "variations": [
+      "Arpan’s technical strengths",
+      "What are his technical strengths?"
+    ],
+    "answer": "The portfolio lists C, Python, Arduino, hardware development, embedded systems, and IoT as Arpan’s skills.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "technical",
+      "strengths",
+      "skills"
+    ]
+  },
+  {
+    "id": 38,
+    "category": "Technical Skills",
+    "question": "Is Arpan interested in electronics?",
+    "variations": [
+      "Arpan interested in electronics",
+      "Is he interested in electronics?"
+    ],
+    "answer": "Yes. Electronics and instrumentation are among his listed interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "electronics",
+      "instrumentation"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "Technical Skills",
+    "question": "Does Arpan work with engineering software?",
+    "variations": [
+      "Arpan work with engineering software",
+      "Does he work with engineering software?"
+    ],
+    "answer": "The portfolio doesn’t list specific engineering software.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "software",
+      "tools",
+      "engineering"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "Technical Skills",
+    "question": "What technologies does Arpan want to learn?",
+    "variations": [
+      "What technologies does Arpan want to learn",
+      "What technologies does he want to learn?"
+    ],
+    "answer": "The portfolio lists his current interests, but doesn’t specify a future learning roadmap.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "want",
+      "learn",
+      "technologies",
+      "roadmap"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "Technical Skills",
+    "question": "Does Arpan work with Arduino?",
+    "variations": [
+      "Arpan work with Arduino",
+      "Does he work with Arduino?"
+    ],
+    "answer": "Arduino is listed among Arpan’s skills and interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "arduino",
+      "hardware"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "Technical Skills",
+    "question": "Does Arpan know embedded systems?",
+    "variations": [
+      "Arpan know embedded systems",
+      "Does he know embedded systems?"
+    ],
+    "answer": "Embedded systems are listed among Arpan’s skills and interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "embedded",
+      "systems"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "Technical Skills",
+    "question": "Is Arpan interested in IoT?",
+    "variations": [
+      "Arpan interested in IoT",
+      "Is he interested in IoT?"
+    ],
+    "answer": "Yes. IoT is listed among Arpan’s skills and interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "iot",
+      "internet",
+      "things"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Technical Skills",
+    "question": "Does Arpan have hardware development skills?",
+    "variations": [
+      "Arpan have hardware development skills",
+      "Does he have hardware development skills?"
+    ],
+    "answer": "Hardware development is listed among Arpan’s skills.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "hardware",
+      "development"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "Technical Skills",
+    "question": "Is Arpan interested in instrumentation?",
+    "variations": [
+      "Arpan interested in instrumentation",
+      "Is he interested in instrumentation?"
+    ],
+    "answer": "Yes. Electronics and instrumentation are listed among Arpan’s interests.",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "What are his interests?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "instrumentation",
+      "electronics"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "Projects",
+    "question": "What projects has Arpan completed?",
+    "variations": [
+      "What projects has Arpan completed",
+      "What projects has he completed?"
+    ],
+    "answer": "Arpan’s portfolio lists two collaborative academic projects: Smart Restaurant Management System and Smart Medical Record Book. It does not publish their implementation details or technology stacks.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "projects",
+      "completed"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "Projects",
+    "question": "What is his latest project?",
+    "variations": [
+      "his latest project"
+    ],
+    "answer": "The portfolio lists two academic projects but doesn’t identify which is latest.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "latest",
+      "newest",
+      "project"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "Projects",
+    "question": "Which programming projects has he developed?",
+    "variations": [
+      "programming projects has he developed"
+    ],
+    "answer": "The portfolio lists Smart Restaurant Management System and Smart Medical Record Book, but doesn’t publish their implementation details or programming languages.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "programming",
+      "software",
+      "projects"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "Projects",
+    "question": "Does Arpan have web development projects?",
+    "variations": [
+      "Arpan have web development projects",
+      "Does he have web development projects?"
+    ],
+    "answer": "The portfolio doesn’t identify a specific web development project.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "web",
+      "development",
+      "project"
+    ]
+  },
+  {
+    "id": 50,
+    "category": "Projects",
+    "question": "What technologies does he use in projects?",
+    "variations": [
+      "What technologies does he use in projects"
+    ],
+    "answer": "The project technology stacks aren’t published in the portfolio.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "project",
+      "technology",
+      "stack",
+      "tools"
+    ]
+  },
+  {
+    "id": 51,
+    "category": "Projects",
+    "question": "What is his most interesting project?",
+    "variations": [
+      "his most interesting project"
+    ],
+    "answer": "The portfolio doesn’t identify a favorite project. It lists Smart Restaurant Management System and Smart Medical Record Book.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "interesting",
+      "favorite",
+      "project"
+    ]
+  },
+  {
+    "id": 52,
+    "category": "Projects",
+    "question": "Can I see his project demonstrations?",
+    "variations": [
+      "Can I see his project demonstrations"
+    ],
+    "answer": "The portfolio doesn’t list demonstration links. You can browse Arpan’s [GitHub profile](https://github.com/arpandebnath6779-cloud).",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "demo",
+      "demonstration",
+      "video"
+    ]
+  },
+  {
+    "id": 53,
+    "category": "Projects",
+    "question": "What problems do his projects solve?",
+    "variations": [
+      "What problems do his projects solve"
+    ],
+    "answer": "The portfolio describes a restaurant management project and a medical record management project, but doesn’t provide further problem or feature details.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "problems",
+      "solve",
+      "project"
+    ]
+  },
+  {
+    "id": 54,
+    "category": "Projects",
+    "question": "Is Arpan working on any new projects?",
+    "variations": [
+      "Arpan working on any new projects",
+      "Is he working on any new projects?"
+    ],
+    "answer": "The portfolio doesn’t state whether Arpan is currently working on a new project.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "new",
+      "current",
+      "project"
+    ]
+  },
+  {
+    "id": 55,
+    "category": "Projects",
+    "question": "Where can I find Arpan’s GitHub projects?",
+    "variations": [
+      "Where can I find Arpan’s GitHub projects",
+      "Where can I find his GitHub projects?"
+    ],
+    "answer": "Arpan’s GitHub profile is [github.com/arpandebnath6779-cloud](https://github.com/arpandebnath6779-cloud). The portfolio doesn’t list separate demo links for the two academic projects.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "github",
+      "repositories",
+      "projects"
+    ]
+  },
+  {
+    "id": 56,
+    "category": "Projects",
+    "question": "What is the Smart Restaurant Management System?",
+    "variations": [
+      "the Smart Restaurant Management System"
+    ],
+    "answer": "It is a collaborative academic project to develop a smart restaurant management system. Further implementation details aren’t published.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "restaurant",
+      "management",
+      "project"
+    ]
+  },
+  {
+    "id": 57,
+    "category": "Projects",
+    "question": "What is the Smart Medical Record Book?",
+    "variations": [
+      "the Smart Medical Record Book"
+    ],
+    "answer": "It is a collaborative academic project focused on smart medical record management. Further implementation details aren’t published.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "medical",
+      "record",
+      "book",
+      "project"
+    ]
+  },
+  {
+    "id": 58,
+    "category": "Projects",
+    "question": "Were Arpan’s projects collaborative?",
+    "variations": [
+      "Were Arpan’s projects collaborative",
+      "Were his projects collaborative?"
+    ],
+    "answer": "Yes. The portfolio presents both listed projects as collaborative academic projects.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "collaborative",
+      "teamwork",
+      "group"
+    ]
+  },
+  {
+    "id": 59,
+    "category": "Projects",
+    "question": "Are project source codes public?",
+    "variations": [
+      "Are project source codes public"
+    ],
+    "answer": "The portfolio links Arpan’s GitHub profile but doesn’t identify repositories for these specific projects.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "source",
+      "code",
+      "repo",
+      "public"
+    ]
+  },
+  {
+    "id": 60,
+    "category": "Projects",
+    "question": "What did Arpan build for healthcare?",
+    "variations": [
+      "What did Arpan build for healthcare",
+      "What did he build for healthcare?"
+    ],
+    "answer": "The portfolio lists Smart Medical Record Book, a collaborative academic project focused on smart medical record management. Details aren’t published.",
+    "followUps": [
+      "Where can I find Arpan’s GitHub?",
+      "What technologies does he list?",
+      "Is Arpan interested in collaboration?"
+    ],
+    "keywords": [
+      "healthcare",
+      "medical",
+      "project"
+    ]
+  },
+  {
+    "id": 61,
+    "category": "Career and Goals",
+    "question": "What are Arpan’s career goals?",
+    "variations": [
+      "Arpan’s career goals",
+      "What are his career goals?"
+    ],
+    "answer": "Arpan is interested in internships, collaborative engineering projects, and practical learning opportunities.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "career",
+      "goals"
+    ]
+  },
+  {
+    "id": 62,
+    "category": "Career and Goals",
+    "question": "Is Arpan interested in internships?",
+    "variations": [
+      "Arpan interested in internships",
+      "Is he interested in internships?"
+    ],
+    "answer": "Arpan is interested in internships, collaborative engineering projects, and practical learning opportunities.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "internship",
+      "intern"
+    ]
+  },
+  {
+    "id": 63,
+    "category": "Career and Goals",
+    "question": "What industries interest him?",
+    "variations": [
+      "What industries interest him"
+    ],
+    "answer": "Arpan’s interests include Biomedical Engineering and healthcare technology. Other specific industries aren’t listed.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "industries",
+      "healthcare"
+    ]
+  },
+  {
+    "id": 64,
+    "category": "Career and Goals",
+    "question": "Is he interested in working in AI?",
+    "variations": [
+      "he interested in working in AI"
+    ],
+    "answer": "AI and machine learning are listed as interests. A specific career plan in AI isn’t stated.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "career",
+      "ai",
+      "work"
+    ]
+  },
+  {
+    "id": 65,
+    "category": "Career and Goals",
+    "question": "What are Arpan’s future plans?",
+    "variations": [
+      "Arpan’s future plans",
+      "What are his future plans?"
+    ],
+    "answer": "Arpan is interested in internships, collaborative engineering projects, and practical learning. Further long-term plans aren’t listed.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "future",
+      "plans"
+    ]
+  },
+  {
+    "id": 66,
+    "category": "Career and Goals",
+    "question": "Does he want to become a software developer?",
+    "variations": [
+      "he want to become a software developer"
+    ],
+    "answer": "The portfolio doesn’t state that as a specific career goal.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "software",
+      "developer",
+      "career"
+    ]
+  },
+  {
+    "id": 67,
+    "category": "Career and Goals",
+    "question": "Is he interested in biomedical research?",
+    "variations": [
+      "he interested in biomedical research"
+    ],
+    "answer": "The portfolio doesn’t state a specific biomedical research plan.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "biomedical",
+      "research"
+    ]
+  },
+  {
+    "id": 68,
+    "category": "Career and Goals",
+    "question": "What professional skills is Arpan developing?",
+    "variations": [
+      "What professional skills is Arpan developing",
+      "What professional skills is he developing?"
+    ],
+    "answer": "The portfolio lists C, Python, Arduino, hardware development, embedded systems, and IoT among his skills.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "professional",
+      "skills",
+      "developing"
+    ]
+  },
+  {
+    "id": 69,
+    "category": "Career and Goals",
+    "question": "Is Arpan interested in collaboration?",
+    "variations": [
+      "Arpan interested in collaboration",
+      "Is he interested in collaboration?"
+    ],
+    "answer": "Yes. Arpan is interested in collaborative engineering projects.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "collaboration",
+      "work",
+      "together"
+    ]
+  },
+  {
+    "id": 70,
+    "category": "Career and Goals",
+    "question": "What motivates Arpan?",
+    "variations": [
+      "What motivates Arpan",
+      "What motivates he?"
+    ],
+    "answer": "The portfolio emphasizes curiosity, innovation, and learning by building.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "motivates",
+      "curiosity"
+    ]
+  },
+  {
+    "id": 71,
+    "category": "Career and Goals",
+    "question": "Is Arpan open to opportunities?",
+    "variations": [
+      "Arpan open to opportunities",
+      "Is he open to opportunities?"
+    ],
+    "answer": "The portfolio says Arpan is ready to learn and interested in internship and collaborative opportunities.",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "opportunities",
+      "open"
+    ]
+  },
+  {
+    "id": 72,
+    "category": "Career and Goals",
+    "question": "How can a recruiter reach Arpan?",
+    "variations": [
+      "How can a recruiter reach Arpan",
+      "How can a recruiter reach he?"
+    ],
+    "answer": "Contact Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). His profiles: [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "Is Arpan interested in internships?",
+      "What projects has Arpan worked on?",
+      "How can I contact Arpan?"
+    ],
+    "keywords": [
+      "recruiter",
+      "hiring",
+      "contact",
+      "email"
+    ]
+  },
+  {
+    "id": 73,
+    "category": "Achievements and Certifications",
+    "question": "What are Arpan’s achievements?",
+    "variations": [
+      "Arpan’s achievements",
+      "What are his achievements?"
+    ],
+    "answer": "The portfolio lists five certificates: NASSCOM Gen AI Tools (Gold, 95%, 24 August 2026); AWS Foundations: Getting Started with AWS Cloud Essentials (9 May 2026); IBM SkillsBuild Enterprise Design Thinking Practitioner (9 February 2026); FutureSkills Prime Emerging Technologies course participation; and Saturday Symposium Session 3.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "achievements",
+      "awards"
+    ]
+  },
+  {
+    "id": 74,
+    "category": "Achievements and Certifications",
+    "question": "Does Arpan have certifications?",
+    "variations": [
+      "Arpan have certifications",
+      "Does he have certifications?"
+    ],
+    "answer": "The portfolio lists five certificates: NASSCOM Gen AI Tools (Gold, 95%, 24 August 2026); AWS Foundations: Getting Started with AWS Cloud Essentials (9 May 2026); IBM SkillsBuild Enterprise Design Thinking Practitioner (9 February 2026); FutureSkills Prime Emerging Technologies course participation; and Saturday Symposium Session 3.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "certifications",
+      "certificates"
+    ]
+  },
+  {
+    "id": 75,
+    "category": "Achievements and Certifications",
+    "question": "Has he participated in competitions?",
+    "variations": [
+      "Has he participated in competitions"
+    ],
+    "answer": "The portfolio doesn’t list any competitions.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "competition",
+      "contest"
+    ]
+  },
+  {
+    "id": 76,
+    "category": "Achievements and Certifications",
+    "question": "Has he attended workshops?",
+    "variations": [
+      "Has he attended workshops"
+    ],
+    "answer": "The portfolio doesn’t list workshops.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "workshop",
+      "attended"
+    ]
+  },
+  {
+    "id": 77,
+    "category": "Achievements and Certifications",
+    "question": "What are his academic achievements?",
+    "variations": [
+      "his academic achievements"
+    ],
+    "answer": "The portfolio lists five certificates: NASSCOM Gen AI Tools (Gold, 95%, 24 August 2026); AWS Foundations: Getting Started with AWS Cloud Essentials (9 May 2026); IBM SkillsBuild Enterprise Design Thinking Practitioner (9 February 2026); FutureSkills Prime Emerging Technologies course participation; and Saturday Symposium Session 3.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "academic",
+      "achievements"
+    ]
+  },
+  {
+    "id": 78,
+    "category": "Achievements and Certifications",
+    "question": "What skills has he developed?",
+    "variations": [
+      "What skills has he developed"
+    ],
+    "answer": "The portfolio lists C, Python, Arduino, hardware development, embedded systems, and IoT as Arpan’s skills.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "developed",
+      "skills"
+    ]
+  },
+  {
+    "id": 79,
+    "category": "Achievements and Certifications",
+    "question": "What are his professional accomplishments?",
+    "variations": [
+      "his professional accomplishments"
+    ],
+    "answer": "The portfolio lists certificates in NASSCOM Gen AI Tools and AWS Foundations. It doesn’t list professional work accomplishments.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "professional",
+      "accomplishments",
+      "work"
+    ]
+  },
+  {
+    "id": 80,
+    "category": "Achievements and Certifications",
+    "question": "What score did Arpan get in Gen AI Tools?",
+    "variations": [
+      "What score did Arpan get in Gen AI Tools",
+      "What score did he get in Gen AI Tools?"
+    ],
+    "answer": "The portfolio lists a NASSCOM Gen AI Tools assessment result of Gold, 95%, completed 24 August 2026.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "gen",
+      "ai",
+      "score",
+      "gold",
+      "95"
+    ]
+  },
+  {
+    "id": 81,
+    "category": "Achievements and Certifications",
+    "question": "Does Arpan have an AWS certificate?",
+    "variations": [
+      "Arpan have an AWS certificate",
+      "Does he have an AWS certificate?"
+    ],
+    "answer": "The portfolio lists five certificates: NASSCOM Gen AI Tools (Gold, 95%, 24 August 2026); AWS Foundations: Getting Started with AWS Cloud Essentials (9 May 2026); IBM SkillsBuild Enterprise Design Thinking Practitioner (9 February 2026); FutureSkills Prime Emerging Technologies course participation; and Saturday Symposium Session 3.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "aws",
+      "certificate",
+      "cloud"
+    ]
+  },
+  {
+    "id": 82,
+    "category": "Achievements and Certifications",
+    "question": "When did Arpan complete his certificates?",
+    "variations": [
+      "When did Arpan complete his certificates",
+      "When did he complete his certificates?"
+    ],
+    "answer": "The portfolio lists NASSCOM Gen AI Tools on 24 August 2026 and AWS Foundations on 9 May 2026.",
+    "followUps": [
+      "What certificates are listed?",
+      "What technical skills does Arpan have?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "certificate",
+      "dates",
+      "completed"
+    ]
+  },
+  {
+    "id": 83,
+    "category": "Personal Interests",
+    "question": "What does Arpan enjoy doing?",
+    "variations": [
+      "What does Arpan enjoy doing",
+      "What does he enjoy doing?"
+    ],
+    "answer": "Arpan’s portfolio says he enjoys brainstorming project ideas and rides in his idle time. Its hobbies section also features Dune and Game of Thrones.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "enjoy",
+      "interests",
+      "hobbies",
+      "movies",
+      "series",
+      "rides"
+    ]
+  },
+  {
+    "id": 84,
+    "category": "Personal Interests",
+    "question": "Is Arpan interested in technology?",
+    "variations": [
+      "Arpan interested in technology",
+      "Is he interested in technology?"
+    ],
+    "answer": "Yes. Arpan’s interests include hardware, embedded systems, Arduino, IoT, AI, machine learning, and web development.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "technology"
+    ]
+  },
+  {
+    "id": 85,
+    "category": "Personal Interests",
+    "question": "Does he enjoy travelling?",
+    "variations": [
+      "he enjoy travelling"
+    ],
+    "answer": "The portfolio doesn’t mention travel preferences.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "travel",
+      "travelling"
+    ]
+  },
+  {
+    "id": 86,
+    "category": "Personal Interests",
+    "question": "What are his favourite areas of technology?",
+    "variations": [
+      "his favourite areas of technology"
+    ],
+    "answer": "Arpan’s published interests include biomedical engineering, healthcare technology, Arduino prototyping, embedded systems, IoT, electronics and instrumentation, Python and C, AI and machine learning, and web development.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "favorite",
+      "favourite",
+      "technology"
+    ]
+  },
+  {
+    "id": 87,
+    "category": "Personal Interests",
+    "question": "Is he interested in photography?",
+    "variations": [
+      "he interested in photography"
+    ],
+    "answer": "The portfolio doesn’t mention photography.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "photography",
+      "photos"
+    ]
+  },
+  {
+    "id": 88,
+    "category": "Personal Interests",
+    "question": "Does he enjoy learning new things?",
+    "variations": [
+      "he enjoy learning new things"
+    ],
+    "answer": "The portfolio describes Arpan as learning through ideas, experiments, and things he builds.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "learning",
+      "curious"
+    ]
+  },
+  {
+    "id": 89,
+    "category": "Personal Interests",
+    "question": "What inspires him?",
+    "variations": [
+      "What inspires him"
+    ],
+    "answer": "The portfolio emphasizes curiosity and learning by building. Other personal inspirations aren’t listed.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "inspiration"
+    ]
+  },
+  {
+    "id": 90,
+    "category": "Personal Interests",
+    "question": "What are his creative interests?",
+    "variations": [
+      "his creative interests"
+    ],
+    "answer": "The portfolio says Arpan enjoys brainstorming project ideas and imagining what could be built.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "creative",
+      "creativity",
+      "art"
+    ]
+  },
+  {
+    "id": 91,
+    "category": "Personal Interests",
+    "question": "Is Arpan interested in healthcare technology?",
+    "variations": [
+      "Arpan interested in healthcare technology",
+      "Is he interested in healthcare technology?"
+    ],
+    "answer": "Yes. His portfolio says he is exploring where healthcare meets technology.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "healthcare",
+      "technology",
+      "interest"
+    ]
+  },
+  {
+    "id": 92,
+    "category": "Personal Interests",
+    "question": "Does Arpan like electronics projects?",
+    "variations": [
+      "Arpan like electronics projects",
+      "Does he like electronics projects?"
+    ],
+    "answer": "Electronics and instrumentation are listed interests; the portfolio doesn’t specify personal preferences beyond that.",
+    "followUps": [
+      "What are Arpan’s technical skills?",
+      "What projects has he worked on?",
+      "Where does he study?"
+    ],
+    "keywords": [
+      "electronics",
+      "projects"
+    ]
+  },
+  {
+    "id": 93,
+    "category": "Contact and Social Media",
+    "question": "How can I contact Arpan?",
+    "variations": [
+      "How can I contact Arpan",
+      "How can I contact he?"
+    ],
+    "answer": "Contact Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). His profiles: [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "contact",
+      "reach"
+    ]
+  },
+  {
+    "id": 94,
+    "category": "Contact and Social Media",
+    "question": "What is Arpan’s email address?",
+    "variations": [
+      "Arpan’s email address",
+      "What is his email address?"
+    ],
+    "answer": "Arpan’s work email is [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "email",
+      "mail",
+      "address"
+    ]
+  },
+  {
+    "id": 95,
+    "category": "Contact and Social Media",
+    "question": "Is Arpan on LinkedIn?",
+    "variations": [
+      "Arpan on LinkedIn",
+      "Is he on LinkedIn?"
+    ],
+    "answer": "Yes: [Arpan’s LinkedIn profile](https://www.linkedin.com/in/arpan-debnath-193913420/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "linkedin",
+      "professional"
+    ]
+  },
+  {
+    "id": 96,
+    "category": "Contact and Social Media",
+    "question": "Does Arpan use Instagram?",
+    "variations": [
+      "Arpan use Instagram",
+      "Does he use Instagram?"
+    ],
+    "answer": "Arpan’s Instagram profile is [@_.x_arpan_x._](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "instagram",
+      "social"
+    ]
+  },
+  {
+    "id": 97,
+    "category": "Contact and Social Media",
+    "question": "Where can I see his professional profile?",
+    "variations": [
+      "Where can I see his professional profile"
+    ],
+    "answer": "See [Arpan’s LinkedIn profile](https://www.linkedin.com/in/arpan-debnath-193913420/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "professional",
+      "profile",
+      "linkedin"
+    ]
+  },
+  {
+    "id": 98,
+    "category": "Contact and Social Media",
+    "question": "How can recruiters contact him?",
+    "variations": [
+      "How can recruiters contact him"
+    ],
+    "answer": "Contact Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). His profiles: [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "recruiter",
+      "email"
+    ]
+  },
+  {
+    "id": 99,
+    "category": "Contact and Social Media",
+    "question": "Can I collaborate with Arpan?",
+    "variations": [
+      "Can I collaborate with Arpan",
+      "Can I collaborate with he?"
+    ],
+    "answer": "Arpan is interested in collaborative engineering projects. Contact him at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "collaborate",
+      "collaboration"
+    ]
+  },
+  {
+    "id": 100,
+    "category": "Contact and Social Media",
+    "question": "Where can I find Arpan’s portfolio?",
+    "variations": [
+      "Where can I find Arpan’s portfolio",
+      "Where can I find his portfolio?"
+    ],
+    "answer": "You’re viewing Arpan’s portfolio. His GitHub profile is [here](https://github.com/arpandebnath6779-cloud).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "portfolio",
+      "website"
+    ]
+  },
+  {
+    "id": 101,
+    "category": "Contact and Social Media",
+    "question": "Can I have Arpan’s phone number?",
+    "variations": [
+      "Can I have Arpan’s phone number",
+      "Can I have his phone number?"
+    ],
+    "answer": "Arpan’s portfolio doesn’t publish a phone number. You can contact him at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "phone",
+      "number",
+      "call"
+    ]
+  },
+  {
+    "id": 102,
+    "category": "Contact and Social Media",
+    "question": "How do I contact Arpan about an internship?",
+    "variations": [
+      "How do I contact Arpan about an internship",
+      "How do I contact he about an internship?"
+    ],
+    "answer": "Contact Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). His profiles: [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "internship",
+      "contact",
+      "email"
+    ]
+  },
+  {
+    "id": 103,
+    "category": "Contact and Social Media",
+    "question": "Where can I follow Arpan’s work?",
+    "variations": [
+      "Where can I follow Arpan’s work",
+      "Where can I follow his work?"
+    ],
+    "answer": "Contact Arpan at [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com). His profiles: [LinkedIn](https://www.linkedin.com/in/arpan-debnath-193913420/), [GitHub](https://github.com/arpandebnath6779-cloud), and [Instagram](https://www.instagram.com/_.x_arpan_x._/).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "social",
+      "profiles",
+      "follow"
+    ]
+  },
+  {
+    "id": 104,
+    "category": "Contact and Social Media",
+    "question": "What is Arpan’s work email?",
+    "variations": [
+      "Arpan’s work email",
+      "What is his work email?"
+    ],
+    "answer": "Arpan’s work email is [arpan6779.work@gmail.com](mailto:arpan6779.work@gmail.com).",
+    "followUps": [
+      "What projects has Arpan worked on?",
+      "Is Arpan interested in collaboration?",
+      "What are his technical skills?"
+    ],
+    "keywords": [
+      "work",
+      "email"
+    ]
+  }
+]
